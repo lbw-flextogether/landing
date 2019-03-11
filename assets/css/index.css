@@ -126,3 +126,63 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+  height: 100%;
+  margin: 0 auto;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.navContainer {
+  background: #3D7992;
+  padding: 1rem 0;
+}
+.navContainer .navBar {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  color: white;
+  padding: 1rem 0;
+}
+.navContainer .navBar .navLogo {
+  font-size: 3rem;
+  width: 50%;
+}
+.navContainer .navBar .navLogo h2 {
+  font-family: "Lato";
+  font-weight: 300;
+}
+.navContainer .navBar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+.navContainer .navBar nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-family: "Lato";
+}
+.navContainer .navBar nav button {
+  text-decoration: none;
+  color: #279ccf;
+}
+.container {
+  background: #3C7187;
+  height: 100%;
+}
+.container .bodyContainer {
+  width: 85%;
+  background: yellow;
+  margin: 0 auto;
+}
+.container .bodyContainer * {
+  width: 100%;
+}
