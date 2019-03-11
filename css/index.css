@@ -215,9 +215,28 @@ button {
   color: white;
   font-size: 18px;
   font-weight: 700;
+  border: none;
 }
 button:hover {
   color: #279ccf;
   background: white;
   cursor: pointer;
+}
+.home-page {
+  background: #F1F0EE;
+  margin: 20px 10px 20px 10px;
+  border-radius: 10px;
+}
+.intro {
+  display: flex;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  color: darkgray;
+  font-weight: 700;
+}
+.intro p {
+  border-bottom: solid 2px darkgray;
+  width: 100%;
+  padding-bottom: 30px;
 }
