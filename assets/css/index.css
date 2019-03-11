@@ -136,6 +136,24 @@ body {
   height: 100%;
   margin: 0 auto;
 }
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 4rem;
+}
+p {
+  font-size: 3rem;
+}
 .navContainer {
   background: #3D7992;
   padding: 1rem 0;
@@ -174,9 +192,20 @@ body {
   text-decoration: none;
   color: #279ccf;
 }
+.footerContainer {
+  background: white;
+}
+.footerContainer footer {
+  width: 90%;
+  background: red;
+}
 .container {
   background: #3C7187;
   height: 100%;
+  margin: 0 auto;
+}
+.container * {
+  margin: inherit;
 }
 .container .bodyContainer {
   width: 85%;
