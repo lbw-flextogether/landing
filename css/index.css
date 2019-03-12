@@ -249,6 +249,11 @@ nav .btn:hover {
   background: #279ccf;
   font-weight: 700;
 }
+@media (max-width: 500px) {
+  .nav-header h2 {
+    font-size: 26px;
+  }
+}
 footer {
   background: #002147;
   color: white;
@@ -276,6 +281,11 @@ button:hover {
   color: #279ccf;
   background: white;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  footer h3 {
+    font-size: 25px;
+  }
 }
 body {
   background: #f9f9f9;
