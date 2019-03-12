@@ -380,7 +380,7 @@ nav {
   .motivate {
     width: 100%;
     border-right: none;
-    border-bottom: solid 2px darkgray;
+    border-bottom: solid 2px #e2dddd;
     padding: 10px;
   }
   .motivate img {
@@ -421,9 +421,6 @@ nav {
   width: 234px;
   height: 234px;
   border-radius: 100%;
-}
-.bottom-info {
-  border-top: solid 2px darkgray;
 }
 @media (max-width: 500px) {
   .top-info {
