@@ -180,9 +180,20 @@ p {
   padding: 1rem 0;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .navContainer .navBar {
+    justify-content: center;
+  }
+}
 .navContainer .navBar .navLogo {
   font-size: 3rem;
   width: 50%;
+}
+@media (max-width: 500px) {
+  .navContainer .navBar .navLogo {
+    width: 50%;
+    position: absolute;
+  }
 }
 .navContainer .navBar .navLogo h2 {
   font-family: "Lato";
@@ -196,6 +207,11 @@ p {
   width: 50%;
   font-family: "Lato";
   font-weight: 300;
+}
+@media (max-width: 500px) {
+  .navContainer .navBar nav {
+    display: none;
+  }
 }
 .navContainer .navBar nav a {
   text-decoration: none;
@@ -213,6 +229,23 @@ p {
 }
 .navContainer .navBar nav button:hover {
   color: white;
+}
+.navContainer .navBar nav.mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .navContainer .navBar nav.mobile {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid red;
+    width: 100%;
+  }
+}
+.navContainer .navBar nav.mobile .dropdown {
+  display: none;
+}
+.navContainer .navBar nav.mobile .dropdown .visible {
+  display: flex;
 }
 .footerContainer {
   background: #002147;
@@ -251,6 +284,16 @@ p {
   margin: 0 auto;
   width: 100%;
 }
+@media (min-width: 800px) and (max-width: 999px) {
+  .container {
+    background: red;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    background: yellow;
+  }
+}
 .container .head {
   display: flex;
   flex-direction: row;
@@ -261,6 +304,12 @@ p {
   background: #f5f8fa;
   margin: 0 0 4rem 0;
 }
+@media (max-width: 500px) {
+  .container .head {
+    flex-direction: column-reverse;
+    padding: 2.5rem 0 4rem 0;
+  }
+}
 .container .head .textHolder {
   display: flex;
   flex-direction: column;
@@ -268,6 +317,11 @@ p {
   text-align: left;
   margin: 0 2rem;
   padding-right: -1rem;
+}
+@media (max-width: 500px) {
+  .container .head .textHolder {
+    flex-direction: row;
+  }
 }
 .container .head .textHolder h1:first-child {
   font-size: 5rem;
@@ -278,46 +332,51 @@ p {
   color: #279ccf;
   line-height: 6rem;
 }
-.container .head .textHolder p {
+.container .head p {
   margin-top: 2rem;
   line-height: 3rem;
   font-size: 2.3rem;
   color: black;
 }
-.container .head .vidHolder {
+.container .vidHolder {
   max-width: 55%;
   margin: 0 2rem;
 }
-.container .head .vidHolder video {
+@media (max-width: 500px) {
+  .container .vidHolder {
+    max-width: 98%;
+  }
+}
+.container .vidHolder video {
   max-width: 100%;
 }
-.container .body {
+.body {
   margin: 0 auto;
   margin-top: 8rem;
 }
-.container .body .bodyContent {
+.body .bodyContent {
   margin-top: 4rem;
   max-width: 100%;
 }
-.container .body .bodyContent .faces {
+.body .bodyContent .faces {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
 }
-.container .body .bodyContent .faces .face {
+.body .bodyContent .faces .face {
   height: 10%;
   width: 10%;
   border-radius: 50%;
 }
-.container .body .bodyContent .textHolder {
+.body .bodyContent .textHolder {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin-top: 3rem;
 }
-.container .body .bodyContent .textHolder2 {
+.body .bodyContent .textHolder2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -328,35 +387,35 @@ p {
   background: #002047;
   vertical-align: center;
 }
-.container .body .bodyContent .textHolder2 .h2 {
+.body .bodyContent .textHolder2 .h2 {
   width: 40%;
   font-weight: 480;
   height: 50%;
   padding-left: 4%;
 }
-.container .body .bodyContent .textHolder2 .h2 h2:first-child {
+.body .bodyContent .textHolder2 .h2 h2:first-child {
   color: #279ccf;
 }
-.container .body .bodyContent .textHolder2 .h2 h2:last-child {
+.body .bodyContent .textHolder2 .h2 h2:last-child {
   color: white;
   line-height: 15rem;
 }
-.container .body .bodyContent .textHolder2 .p {
+.body .bodyContent .textHolder2 .p {
   width: 40%;
   height: 50%;
   padding-left: 8%;
 }
-.container .body .bodyContent .textHolder2 .p p {
+.body .bodyContent .textHolder2 .p p {
   font-size: 2.6rem;
   line-height: 4rem;
   font-weight: 300;
   color: white;
 }
-.container .contentSquares {
+.contentSquares {
   margin: 10rem 0;
   width: 100%;
 }
-.container .contentSquares .square1 {
+.contentSquares .square1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -364,21 +423,21 @@ p {
   margin: 0 auto;
   align-items: center;
 }
-.container .contentSquares .square1 .squareImg {
+.contentSquares .square1 .squareImg {
   width: 50%;
 }
-.container .contentSquares .square1 .squareImg .squarePic {
+.contentSquares .square1 .squareImg .squarePic {
   max-width: 100%;
 }
-.container .contentSquares .square1 .squareText {
+.contentSquares .square1 .squareText {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
-.container .contentSquares .square1 .squareText p {
+.contentSquares .square1 .squareText p {
   font-size: 2.5rem;
 }
-.container .contentSquares .square2 {
+.contentSquares .square2 {
   flex-direction: row-reverse;
   display: flex;
   justify-content: space-between;
@@ -386,17 +445,17 @@ p {
   margin: 0 auto;
   align-items: center;
 }
-.container .contentSquares .square2 .squareImg {
+.contentSquares .square2 .squareImg {
   width: 45%;
 }
-.container .contentSquares .square2 .squareImg .squarePic {
+.contentSquares .square2 .squareImg .squarePic {
   max-width: 100%;
 }
-.container .contentSquares .square2 .squareText {
+.contentSquares .square2 .squareText {
   width: 45%;
   display: flex;
   flex-direction: column;
 }
-.container .contentSquares .square2 .squareText p {
+.contentSquares .square2 .squareText p {
   font-size: 2.5rem;
 }

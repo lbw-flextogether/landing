@@ -12,9 +12,18 @@
     padding: 1rem 0;
     margin: 0 auto;
 
+    @media @phone {
+      justify-content: center;
+    }
+
     .navLogo {
       font-size: 3rem;
       width: 50%;
+
+      @media @phone {
+        width: 50%;
+        position: absolute;
+      }
       h2 {
         font-family: "Lato";
         font-weight: 330;
@@ -30,6 +39,10 @@
       font-family: "Lato";
       font-weight: 300;
 
+      @media @phone {
+        display: none;
+      }
+
       a {
         text-decoration: none;
         font-size: 2rem;
@@ -40,6 +53,28 @@
         .my-button();
       }
     }
+
+    nav.mobile {
+      display: none;
+
+      @media @phone {
+        display: flex;
+        justify-content: flex-end;
+        border: 1px solid red;
+        width: 100%;
+        img {
+        }
+      }
+      .dropdown{
+        display: none;
+
+        .visible {
+          display: flex;
+        
+      }
+    }
+
   }
+}
 }
 

@@ -4,11 +4,13 @@
     <title>FlexTogether</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./components/Buttons.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/index.css" />
+    
   </head>
   <body>
 
@@ -23,8 +25,19 @@
         <nav>
           <a href="#">ABOUT</a>
           <a href="#">WHO</a>
-          <button class="navBtn">LOG IN</button>
-          <button class="navBtn">SIGN UP</button>
+          <button class="navBtn react">LOG IN</button>
+          <button class="navBtn react">SIGN UP</button>
+        </nav>
+        <nav class="mobile">
+            <img class="mobileNavBtn" src="./assets/img/menu.png">
+            <div class="dropdown">
+                <ul>
+                    <li>ABOUT</li>
+                    <li>WHO</li>
+                    <li>LOG IN</li>
+                    <li>SIGN UP</li>
+                </ul>
+            </div>
         </nav>
       </div>
     </section>
@@ -128,8 +141,8 @@
 
 <footer>
     <h2>FlexTogether</h2>
-    <button class="footerBtn">LOG IN</button>
-    <button class="footerBtn">SIGN UP</button>
+    <button class="footerBtn react">LOG IN</button>
+    <button class="footerBt react">SIGN UP</button>
 </footer>
 </section>
 

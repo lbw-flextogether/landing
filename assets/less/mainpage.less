@@ -4,6 +4,14 @@
     margin: 0 auto;
     width: 100%;
 
+    @media @tablet {
+        background: red;
+    }
+
+    @media @phone {
+        background: yellow;
+    }
+
 
 
 .head {
@@ -16,6 +24,11 @@
     background: @flexgray;
     margin: 0 0 4rem 0;
 
+    @media @phone {
+        flex-direction: column-reverse;
+        padding: 2.5rem 0 4rem 0;
+    }
+
 
     .textHolder {
         display: flex;
@@ -24,6 +37,10 @@
         text-align: left;
         margin: 0 2rem;
         padding-right: -1rem;
+
+        @media @phone {
+            flex-direction: row;
+        }
 
 
         h1:first-child{
@@ -35,6 +52,8 @@
             color: @flexlightblue;
             line-height: 6rem;
         }
+
+    }
 
 
         p {
@@ -48,6 +67,10 @@
     .vidHolder {
         max-width: 55%;
         margin: 0 2rem;
+
+        @media @phone {
+            max-width: 98%;
+        }
 
         video {
             max-width: 100%;
@@ -194,6 +217,6 @@
         }
     }
     }
-}
+
 
 
