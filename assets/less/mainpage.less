@@ -1,25 +1,54 @@
 .container {
-    background: #3C7187;
+    background: white;
     height: 100%;
     margin: 0 auto;
+    width: 100%;
+    border: 1px solid yellow;
 
-    * {
-        margin: inherit
-    }
 
 
 .bodyContainer {
-width: 85%;
-background: yellow;
-margin: 0 auto;
-
-* {
-    width: 100%;
-}
+width: 100%;
+background: #f5f8fa;
+margin: inherit;
+border: 1px solid red;
 
 .head {
-    img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 0;
+    width: 100%;
 
+
+    .textHolder {
+        display: flex;
+        flex-direction: column;
+        max-width: 35%;
+        text-align: left;
+        margin: 0 2rem;
+        padding-right: -1rem;
+
+
+        h1 {
+        }
+
+        p {
+            margin-top: 2rem;
+            line-height: 3rem;
+            font-size: 1.83rem;
+        }
+    }
+
+    .vidHolder {
+        max-width: 55%;
+
+        video {
+            max-width: 100%;
+
+
+        }
     }
 
 }

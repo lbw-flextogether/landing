@@ -126,18 +126,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html {
+* {
+  box-sizing: border-box;
+}
+html,
+body {
   font-size: 62.5%;
-  height: 100%;
+  width: 100%;
   margin: 0 auto;
 }
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "lato";
 }
 h1 {
-  font-size: 5rem;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 5.2rem;
 }
 h2 {
   font-size: 4rem;
@@ -152,21 +162,21 @@ h5 {
   font-size: 4rem;
 }
 p {
-  font-size: 3rem;
+  font-size: 1.6rem;
 }
 .navContainer {
   background: #3D7992;
   padding: 1rem 0;
 }
 .navContainer .navBar {
-  width: 90%;
-  margin: 1rem auto;
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   color: white;
   padding: 1rem 0;
+  margin: 0 auto;
 }
 .navContainer .navBar .navLogo {
   font-size: 3rem;
@@ -189,29 +199,57 @@ p {
   font-family: "Lato";
 }
 .navContainer .navBar nav button {
-  text-decoration: none;
+  width: 10%;
+  height: 5rem;
   color: #279ccf;
+  font-size: 100%;
 }
 .footerContainer {
   background: white;
-}
-.footerContainer footer {
-  width: 90%;
-  background: red;
-}
-.container {
-  background: #3C7187;
-  height: 100%;
-  margin: 0 auto;
-}
-.container * {
   margin: inherit;
 }
-.container .bodyContainer {
-  width: 85%;
-  background: yellow;
-  margin: 0 auto;
+.footerContainer footer {
+  width: 99%;
+  background: red;
+  margin: inherit;
 }
-.container .bodyContainer * {
+.container {
+  background: white;
+  height: 100%;
+  margin: 0 auto;
   width: 100%;
+  border: 1px solid yellow;
+}
+.container .bodyContainer {
+  width: 100%;
+  background: #f5f8fa;
+  margin: inherit;
+  border: 1px solid red;
+}
+.container .bodyContainer .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 0;
+  width: 100%;
+}
+.container .bodyContainer .head .textHolder {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  text-align: left;
+  margin: 0 2rem;
+  padding-right: -1rem;
+}
+.container .bodyContainer .head .textHolder p {
+  margin-top: 2rem;
+  line-height: 3rem;
+  font-size: 1.83rem;
+}
+.container .bodyContainer .head .vidHolder {
+  max-width: 55%;
+}
+.container .bodyContainer .head .vidHolder video {
+  max-width: 100%;
 }
