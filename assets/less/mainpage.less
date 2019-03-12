@@ -16,7 +16,6 @@
     width: 100%;
     background: @flexgray;
     margin: inherit;
-    border: 1px solid red;
 
 
     .textHolder {
@@ -60,15 +59,21 @@
 }
 
 .body {
+    margin: 0 auto;
+
     .bodyContent{
         margin-top: 4rem;
+        max-width: 100%;
+
         .faces {
             display: flex;
             flex-direction: row;
             justify-content: center;
+            margin: 0 auto;
 
             .face {
-                height: 20rem;
+                height: 10%;
+                width: 10%;
                 border-radius: 50%;
             }
 
@@ -78,7 +83,35 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
+            margin-top: 3rem;
 
+        }
+    }
+}
+
+.contentSquares{
+    margin: 10rem 0;
+    width: 100%;
+
+    .square1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+        align-items: center;
+
+        .squareImg{
+            width: 50%;
+
+            .squarePic{
+
+            }
+        }
+        .squareText{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
         }
     }
 }

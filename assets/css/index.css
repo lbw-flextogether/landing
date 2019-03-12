@@ -186,7 +186,7 @@ p {
 }
 .navContainer .navBar .navLogo h2 {
   font-family: "Lato";
-  font-weight: 300;
+  font-weight: 330;
 }
 .navContainer .navBar nav {
   display: flex;
@@ -219,10 +219,30 @@ p {
   margin: inherit;
 }
 .footerContainer footer {
-  width: 99%;
+  width: 95%;
   background: #002147;
   margin: inherit;
   height: 10rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerContainer footer h2 {
+  font-family: "Lato";
+  font-weight: 330;
+}
+.footerContainer footer button {
+  font-size: 2rem;
+  width: 15%;
+  height: 5rem;
+  background: #279ccf;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.footerContainer footer button:hover {
   color: white;
 }
 .container {
@@ -241,7 +261,6 @@ p {
   width: 100%;
   background: #f5f8fa;
   margin: inherit;
-  border: 1px solid red;
 }
 .container .head .textHolder {
   display: flex;
@@ -272,16 +291,22 @@ p {
 .container .head .vidHolder video {
   max-width: 100%;
 }
+.container .body {
+  margin: 0 auto;
+}
 .container .body .bodyContent {
   margin-top: 4rem;
+  max-width: 100%;
 }
 .container .body .bodyContent .faces {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0 auto;
 }
 .container .body .bodyContent .faces .face {
-  height: 20rem;
+  height: 10%;
+  width: 10%;
   border-radius: 50%;
 }
 .container .body .bodyContent .textHolder {
@@ -289,4 +314,25 @@ p {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-top: 3rem;
+}
+.container .contentSquares {
+  margin: 10rem 0;
+  width: 100%;
+}
+.container .contentSquares .square1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  align-items: center;
+}
+.container .contentSquares .square1 .squareImg {
+  width: 50%;
+}
+.container .contentSquares .square1 .squareText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
