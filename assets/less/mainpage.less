@@ -12,10 +12,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10rem 0;
+    padding: 10rem 0 8rem 0;
     width: 100%;
     background: @flexgray;
-    margin: inherit;
+    margin: 0 0 4rem 0;
 
 
     .textHolder {
@@ -34,6 +34,7 @@
         }
         h1:last-child{
             color: @flexlightblue;
+            line-height: 6rem;
         }
 
 
@@ -60,6 +61,7 @@
 
 .body {
     margin: 0 auto;
+    margin-top: 8rem;
 
     .bodyContent{
         margin-top: 4rem;
@@ -86,6 +88,47 @@
             margin-top: 3rem;
 
         }
+        .textHolder2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: space-evenly;
+            margin: 8rem auto;
+            width: 100%;
+            padding: 10rem 0;
+            background: @darkblue2;
+            vertical-align: center;
+            
+
+            .h2 {
+                width: 40%;
+                font-weight: 480;
+                height: 50%;
+                padding-left: 4%;
+
+                h2:first-child{
+                    color: @flexlightblue;
+                }
+                h2:last-child {
+                    color: white;
+
+                line-height: 15rem;
+                }
+            }
+            .p {
+                width: 40%;
+                height: 50%;
+                padding-left: 8%;
+
+                p {
+                    font-size: 2.6rem;
+                    line-height: 4rem;
+                    font-weight: 300;
+                    color: white;
+                }
+            }
+
+        }
     }
 }
 
@@ -105,6 +148,7 @@
             width: 50%;
 
             .squarePic{
+                max-width: 100%;
 
             }
         }
@@ -112,8 +156,45 @@
             width: 50%;
             display: flex;
             flex-direction: column;
+
+            h2 {
+
+            }
+            p {
+                font-size: 2.5rem;
+            }
         }
+    }
+    .square2{
+        flex-direction: row-reverse;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+        align-items: center;
+
+        .squareImg{
+            width: 45%;
+
+            .squarePic{
+                max-width: 100%;
+
+            }
+        }
+        .squareText{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+
+            }
+            p {
+                font-size: 2.5rem;
+            }
+        }
+    }
     }
 }
 
-}
+

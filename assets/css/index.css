@@ -257,10 +257,10 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10rem 0;
+  padding: 10rem 0 8rem 0;
   width: 100%;
   background: #f5f8fa;
-  margin: inherit;
+  margin: 0 0 4rem 0;
 }
 .container .head .textHolder {
   display: flex;
@@ -277,6 +277,7 @@ p {
 }
 .container .head .textHolder h1:last-child {
   color: #279ccf;
+  line-height: 6rem;
 }
 .container .head .textHolder p {
   margin-top: 2rem;
@@ -293,6 +294,7 @@ p {
 }
 .container .body {
   margin: 0 auto;
+  margin-top: 8rem;
 }
 .container .body .bodyContent {
   margin-top: 4rem;
@@ -316,6 +318,41 @@ p {
   text-align: center;
   margin-top: 3rem;
 }
+.container .body .bodyContent .textHolder2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-evenly;
+  margin: 8rem auto;
+  width: 100%;
+  padding: 10rem 0;
+  background: #002047;
+  vertical-align: center;
+}
+.container .body .bodyContent .textHolder2 .h2 {
+  width: 40%;
+  font-weight: 480;
+  height: 50%;
+  padding-left: 4%;
+}
+.container .body .bodyContent .textHolder2 .h2 h2:first-child {
+  color: #279ccf;
+}
+.container .body .bodyContent .textHolder2 .h2 h2:last-child {
+  color: white;
+  line-height: 15rem;
+}
+.container .body .bodyContent .textHolder2 .p {
+  width: 40%;
+  height: 50%;
+  padding-left: 8%;
+}
+.container .body .bodyContent .textHolder2 .p p {
+  font-size: 2.6rem;
+  line-height: 4rem;
+  font-weight: 300;
+  color: white;
+}
 .container .contentSquares {
   margin: 10rem 0;
   width: 100%;
@@ -331,8 +368,36 @@ p {
 .container .contentSquares .square1 .squareImg {
   width: 50%;
 }
+.container .contentSquares .square1 .squareImg .squarePic {
+  max-width: 100%;
+}
 .container .contentSquares .square1 .squareText {
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+.container .contentSquares .square1 .squareText p {
+  font-size: 2.5rem;
+}
+.container .contentSquares .square2 {
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  align-items: center;
+}
+.container .contentSquares .square2 .squareImg {
+  width: 45%;
+}
+.container .contentSquares .square2 .squareImg .squarePic {
+  max-width: 100%;
+}
+.container .contentSquares .square2 .squareText {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contentSquares .square2 .squareText p {
+  font-size: 2.5rem;
 }
