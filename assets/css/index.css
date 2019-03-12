@@ -223,6 +223,7 @@ p {
   background: #002147;
   margin: inherit;
   height: 10rem;
+  color: white;
 }
 .container {
   background: white;
@@ -250,14 +251,19 @@ p {
   margin: 0 2rem;
   padding-right: -1rem;
 }
-.container .head .textHolder h1 {
+.container .head .textHolder h1:first-child {
   font-size: 5rem;
   line-height: 6rem;
+  color: #002147;
+}
+.container .head .textHolder h1:last-child {
+  color: #279ccf;
 }
 .container .head .textHolder p {
   margin-top: 2rem;
   line-height: 3rem;
   font-size: 2.3rem;
+  color: black;
 }
 .container .head .vidHolder {
   max-width: 55%;
