@@ -345,6 +345,41 @@ button:hover {
     font-size: 30px;
   }
 }
+@media (max-width: 500px) {
+  .person p {
+    padding: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-info {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .motivate {
+    width: 100%;
+    border-right: none;
+    border-bottom: solid 2px darkgray;
+    padding: 10px;
+  }
+  .motivate img {
+    width: 100%;
+  }
+  .motivate h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .simple {
+    width: 100%;
+  }
+  .simple img {
+    width: 100%;
+  }
+  .simple h3 {
+    font-size: 30px;
+  }
+}
 .us {
   font-size: 40px;
 }
