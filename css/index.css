@@ -277,6 +277,9 @@ button:hover {
   background: white;
   cursor: pointer;
 }
+body {
+  background: #f9f9f9;
+}
 .home-page {
   background: #F1F0EE;
   margin: 20px 10px 20px 10px;
