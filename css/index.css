@@ -148,30 +148,32 @@ h5 {
 .dropdown {
   z-index: 2;
   position: absolute;
+  margin-left: 10px;
   cursor: pointer;
 }
 .dropdown .dropdown-button {
   padding: 15px;
-  border: 3px solid #002147;
-  color: #002147;
+  border: 2px solid #002147;
+  color: white;
   font-size: 20px;
   font-weight: bold;
-  background-color: #279ccf;
+  background-color: #002147;
+  border-radius: 10px;
 }
 .dropdown .dropdown-button:hover {
-  background-color: #002147;
-  color: #279ccf;
-  border: 3px solid #279ccf;
+  background-color: #279ccf;
+  border: 5px solid #279ccf;
 }
 .dropdown .dropdown-content {
   width: 100%;
   position: absolute;
-  background-color: #279ccf;
+  background-color: #002147;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
   border: 2.5px solid #002147;
+  border-radius: 10px;
 }
 .dropdown .dropdown-link {
   width: 100%;
@@ -179,7 +181,7 @@ h5 {
   padding: 15px 0;
   font-size: 18px;
   text-decoration: none;
-  color: #002147;
+  color: white;
 }
 .dropdown .dropdown-link:hover {
   color: #279ccf;
