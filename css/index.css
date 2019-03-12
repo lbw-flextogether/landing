@@ -335,6 +335,16 @@ button:hover {
   border-radius: 6px;
   margin-bottom: 5px;
 }
+@media (max-width: 500px) {
+  .sixExercise {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .person h3 {
+    font-size: 30px;
+  }
+}
 .us {
   font-size: 40px;
 }
