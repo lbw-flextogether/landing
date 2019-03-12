@@ -145,6 +145,49 @@ h5 {
   font-family: 'Open Sans', sans-serif;
   color: #002147;
 }
+.dropdown {
+  z-index: 2;
+  position: absolute;
+  cursor: pointer;
+}
+.dropdown .dropdown-button {
+  padding: 15px;
+  border: 3px solid #002147;
+  color: #002147;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #279ccf;
+}
+.dropdown .dropdown-button:hover {
+  background-color: #002147;
+  color: #279ccf;
+  border: 3px solid #279ccf;
+}
+.dropdown .dropdown-content {
+  width: 100%;
+  position: absolute;
+  background-color: #279ccf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border: 2.5px solid #002147;
+}
+.dropdown .dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: #002147;
+}
+.dropdown .dropdown-link:hover {
+  color: #279ccf;
+  background-color: #002147;
+}
+.dropdown .dropdown-hidden {
+  display: none;
+}
 .nav-header h1 {
   display: flex;
   justify-content: center;
