@@ -219,8 +219,17 @@
         margin: 0 auto;
         align-items: center;
 
+        @media @phone {
+            flex-direction: column;
+
+        }
+
         .squareImg{
             width: 50%;
+
+            @media @phone {
+                width: 95%;
+            }
 
             .squarePic{
                 max-width: 100%;
@@ -231,6 +240,10 @@
             width: 50%;
             display: flex;
             flex-direction: column;
+
+            @media @phone {
+                width: 95%;
+            }
 
             h2 {
 
