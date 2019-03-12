@@ -165,7 +165,7 @@ p {
   font-size: 1.6rem;
 }
 .navContainer {
-  background: #3D7992;
+  background: #002147;
   padding: 1rem 0;
 }
 .navContainer .navBar {
@@ -190,13 +190,15 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: baseline;
   width: 50%;
+  font-family: "Lato";
+  font-weight: 300;
 }
 .navContainer .navBar nav a {
   text-decoration: none;
   font-size: 2rem;
   color: white;
-  font-family: "Lato";
 }
 .navContainer .navBar nav button {
   width: 10%;
@@ -205,13 +207,14 @@ p {
   font-size: 100%;
 }
 .footerContainer {
-  background: white;
+  background: #002147;
   margin: inherit;
 }
 .footerContainer footer {
   width: 99%;
-  background: red;
+  background: #002147;
   margin: inherit;
+  height: 10rem;
 }
 .container {
   background: white;
@@ -220,21 +223,18 @@ p {
   width: 100%;
   border: 1px solid yellow;
 }
-.container .bodyContainer {
-  width: 100%;
-  background: #f5f8fa;
-  margin: inherit;
-  border: 1px solid red;
-}
-.container .bodyContainer .head {
+.container .head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10rem 0;
   width: 100%;
+  background: #f5f8fa;
+  margin: inherit;
+  border: 1px solid red;
 }
-.container .bodyContainer .head .textHolder {
+.container .head .textHolder {
   display: flex;
   flex-direction: column;
   max-width: 35%;
@@ -242,14 +242,29 @@ p {
   margin: 0 2rem;
   padding-right: -1rem;
 }
-.container .bodyContainer .head .textHolder p {
+.container .head .textHolder h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+}
+.container .head .textHolder p {
   margin-top: 2rem;
   line-height: 3rem;
-  font-size: 1.83rem;
+  font-size: 2.3rem;
 }
-.container .bodyContainer .head .vidHolder {
+.container .head .vidHolder {
   max-width: 55%;
+  margin: 0 2rem;
 }
-.container .bodyContainer .head .vidHolder video {
+.container .head .vidHolder video {
   max-width: 100%;
+}
+.container .body .bodyContent .faces {
+  display: flex;
+  justify-content: center;
+}
+.container .body .bodyContent .textHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }

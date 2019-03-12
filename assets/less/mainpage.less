@@ -7,12 +7,6 @@
 
 
 
-.bodyContainer {
-width: 100%;
-background: #f5f8fa;
-margin: inherit;
-border: 1px solid red;
-
 .head {
     display: flex;
     flex-direction: row;
@@ -20,6 +14,9 @@ border: 1px solid red;
     align-items: center;
     padding: 10rem 0;
     width: 100%;
+    background: @flexgray;
+    margin: inherit;
+    border: 1px solid red;
 
 
     .textHolder {
@@ -32,17 +29,20 @@ border: 1px solid red;
 
 
         h1 {
+            font-size: 5rem;
+            line-height: 6rem;
         }
 
         p {
             margin-top: 2rem;
             line-height: 3rem;
-            font-size: 1.83rem;
+            font-size: 2.3rem;
         }
     }
 
     .vidHolder {
         max-width: 55%;
+        margin: 0 2rem;
 
         video {
             max-width: 100%;
@@ -53,5 +53,21 @@ border: 1px solid red;
 
 }
 
+.body {
+    .bodyContent{
+        .faces {
+            display: flex;
+            justify-content: center;
+
+        }
+        .textHolder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+        }
+    }
 }
+
 }
