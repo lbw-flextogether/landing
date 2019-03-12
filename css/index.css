@@ -135,6 +135,7 @@ body {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  height: 0 auto;
 }
 h1,
 h2,
@@ -231,12 +232,52 @@ button:hover {
   display: flex;
   text-align: center;
   padding: 30px;
-  font-size: 20px;
-  color: darkgray;
+  font-size: 22px;
+  color: #002147;
   font-weight: 700;
 }
 .intro p {
   border-bottom: solid 2px darkgray;
   width: 100%;
   padding-bottom: 30px;
+}
+.person {
+  text-align: center;
+}
+.person h3 {
+  font-size: 18.5px;
+  font-weight: 700;
+}
+.person p {
+  font-size: 15px;
+  padding: 0 200px 0 200px;
+  margin-top: 10px;
+  border-bottom: solid 2px darkgray;
+  padding-bottom: 40px;
+}
+.bottom-info {
+  text-align: center;
+  display: flex;
+}
+.bottom-info h3 {
+  font-size: 16.7px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.motivate {
+  width: 50%;
+  border-right: solid 2px darkgray;
+  padding: 10px;
+}
+.motivate img {
+  width: 50%;
+}
+.simple {
+  width: 50%;
+  padding: 10px;
+}
+.simple img {
+  width: 60%;
+  border-radius: 6px;
+  margin-bottom: 5px;
 }
