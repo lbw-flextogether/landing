@@ -237,7 +237,6 @@ p {
   .navContainer .navBar nav.mobile {
     display: flex;
     justify-content: flex-end;
-    border: 1px solid red;
     width: 100%;
   }
 }
