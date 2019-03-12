@@ -201,10 +201,16 @@ p {
   color: white;
 }
 .navContainer .navBar nav button {
-  width: 10%;
+  font-size: 2rem;
+  width: 15%;
   height: 5rem;
-  color: #279ccf;
-  font-size: 100%;
+  background: #279ccf;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.navContainer .navBar nav button:hover {
+  color: white;
 }
 .footerContainer {
   background: #002147;
