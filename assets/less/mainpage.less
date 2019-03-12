@@ -9,7 +9,7 @@
     }
 
     @media @phone {
-        background: yellow;
+        // background: yellow;
     }
 
 
@@ -40,18 +40,28 @@
 
         @media @phone {
             flex-direction: row;
+            max-width: 100%;
+            flex-wrap: wrap;
+            // align-content: center;
+            justify-content: center;
         }
 
-
-        h1:first-child{
+        h1 {
             font-size: 5rem;
             line-height: 6rem;
             color: @flexdarkblue;
+
+            @media @phone {
+            }
         }
-        h1:last-child{
+
+        h1:last-of-type{
             color: @flexlightblue;
             line-height: 6rem;
         }
+    
+
+
 
     }
 

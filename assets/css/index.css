@@ -290,9 +290,6 @@ p {
   }
 }
 @media (max-width: 500px) {
-  .container {
-    background: yellow;
-  }
 }
 .container .head {
   display: flex;
@@ -321,14 +318,17 @@ p {
 @media (max-width: 500px) {
   .container .head .textHolder {
     flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
-.container .head .textHolder h1:first-child {
+.container .head .textHolder h1 {
   font-size: 5rem;
   line-height: 6rem;
   color: #002147;
 }
-.container .head .textHolder h1:last-child {
+.container .head .textHolder h1:last-of-type {
   color: #279ccf;
   line-height: 6rem;
 }
