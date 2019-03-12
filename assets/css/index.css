@@ -405,11 +405,28 @@ p {
   background: #002047;
   vertical-align: center;
 }
+@media (max-width: 500px) {
+  .body .bodyContent .textHolder2 {
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 10%;
+  }
+}
 .body .bodyContent .textHolder2 .h2 {
   width: 40%;
   font-weight: 480;
   height: 50%;
   padding-left: 4%;
+}
+@media (max-width: 500px) {
+  .body .bodyContent .textHolder2 .h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 .body .bodyContent .textHolder2 .h2 h2:first-child {
   color: #279ccf;
@@ -418,16 +435,31 @@ p {
   color: white;
   line-height: 15rem;
 }
+@media (max-width: 500px) {
+  .body .bodyContent .textHolder2 .h2 h2:last-child {
+    line-height: 5rem;
+  }
+}
 .body .bodyContent .textHolder2 .p {
   width: 40%;
   height: 50%;
   padding-left: 8%;
+}
+@media (max-width: 500px) {
+  .body .bodyContent .textHolder2 .p {
+    padding-left: 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-top: 8%;
+  }
 }
 .body .bodyContent .textHolder2 .p p {
   font-size: 2.6rem;
   line-height: 4rem;
   font-weight: 300;
   color: white;
+  width: 100%;
 }
 .contentSquares {
   margin: 10rem 0;
