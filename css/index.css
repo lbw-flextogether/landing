@@ -404,3 +404,17 @@ button:hover {
 .bottom-info {
   border-top: solid 2px darkgray;
 }
+@media (max-width: 500px) {
+  .top-info {
+    display: block;
+  }
+  .top-info h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .middle-info .usPics {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}
