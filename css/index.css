@@ -190,6 +190,15 @@ h5 {
 .dropdown .dropdown-hidden {
   display: none;
 }
+@media (max-width: 500px) {
+  .dropdown {
+    position: relative;
+    margin: 10px;
+  }
+  .dropdown .dropdown-button {
+    text-align: center;
+  }
+}
 .nav-header h1 {
   display: flex;
   justify-content: center;
