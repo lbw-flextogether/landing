@@ -79,7 +79,8 @@
         margin: 0 2rem;
 
         @media @phone {
-            max-width: 98%;
+            max-width: 100%;
+            margin: 0 1rem 2rem 1rem;
         }
 
         video {
@@ -99,19 +100,34 @@
         margin-top: 4rem;
         max-width: 100%;
 
+        @media @phone {
+            margin-top: 1rem;
+        }
+
         .faces {
             display: flex;
             flex-direction: row;
             justify-content: center;
             margin: 0 auto;
 
+            @media @phone {
+                max-width: 95%;
+                flex-wrap: wrap;
+                margin-bottom: 5rem;
+            }
+
             .face {
                 height: 10%;
                 width: 10%;
                 border-radius: 50%;
+
+                @media @phone {
+                    width: 25%;
+                }
             }
 
         }
+
         .textHolder {
             display: flex;
             flex-direction: column;
