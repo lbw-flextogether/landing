@@ -272,9 +272,17 @@ p {
 .container .head .vidHolder video {
   max-width: 100%;
 }
+.container .body .bodyContent {
+  margin-top: 4rem;
+}
 .container .body .bodyContent .faces {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+}
+.container .body .bodyContent .faces .face {
+  height: 20rem;
+  border-radius: 50%;
 }
 .container .body .bodyContent .textHolder {
   display: flex;
