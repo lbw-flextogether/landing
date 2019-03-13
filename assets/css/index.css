@@ -634,12 +634,10 @@ p {
 }
 .head2 .imgHolder {
   max-width: 100%;
-  margin: 0 2rem;
 }
 @media (max-width: 500px) {
   .head2 .imgHolder {
     max-width: 100%;
-    margin: 0 1rem 2rem 1rem;
   }
 }
 .head2 .imgHolder img {
@@ -709,7 +707,4 @@ p {
 .contentIndustry .imageHolder img {
   max-width: 80%;
   border-radius: 50%;
-}
-.partners {
-  background: yellow;
 }
