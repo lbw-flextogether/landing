@@ -444,7 +444,7 @@ p {
   align-items: space-evenly;
   margin: 8rem auto;
   width: 100%;
-  padding: 10rem 0;
+  padding: 4rem 0;
   background: #002047;
   vertical-align: center;
 }
@@ -617,22 +617,20 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10rem 0 8rem 0;
+  padding: 2rem 0;
   width: 100%;
   background: #f5f8fa;
   margin: 0 0 4rem 0;
 }
 @media (max-width: 500px) {
   .head2 {
-    flex-direction: column-reverse;
     padding: 2.5rem 0 4rem 0;
   }
 }
-.head2 p {
-  margin-top: 2rem;
-  line-height: 3rem;
-  font-size: 2.3rem;
-  color: black;
+.head2 .textHolder {
+  max-width: 80%;
+  margin: 2rem auto;
+  text-align: center;
 }
 .head2 .imgHolder {
   max-width: 100%;
@@ -646,6 +644,21 @@ p {
 }
 .head2 .imgHolder img {
   max-width: 100%;
+}
+.head2 .headInfo {
+  max-width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+}
+.head2 .headInfo h2 {
+  font-weight: 600;
+}
+.head2 .headInfo p {
+  margin-top: 2rem;
+  line-height: 3rem;
+  font-size: 2.3rem;
+  color: black;
+  font-weight: 300;
 }
 .main {
   display: flex;
@@ -683,17 +696,19 @@ p {
   flex-direction: row;
   max-width: 80%;
   margin: 0 auto;
+  justify-content: space-between;
 }
 .contentIndustry .textHolder {
-  max-width: 50%;
+  max-width: 40%;
   display: flex;
   flex-direction: column;
 }
 .contentIndustry .imageHolder {
-  max-width: 50%;
+  max-width: 40%;
 }
 .contentIndustry .imageHolder img {
-  max-width: 100%;
+  max-width: 80%;
+  border-radius: 50%;
 }
 .partners {
   background: yellow;

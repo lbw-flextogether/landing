@@ -3,62 +3,21 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10rem 0 8rem 0;
+    padding: 2rem 0;
     width: 100%;
     background: @flexgray;
     margin: 0 0 4rem 0;
 
     @media @phone {
-        flex-direction: column-reverse;
         padding: 2.5rem 0 4rem 0;
     }
 
-
-    // .textHolder {
-    //     display: flex;
-    //     flex-direction: column;
-    //     max-width: 100%;
-    //     text-align: left;
-    //     margin: 0 2rem;
-    //     padding-right: -1rem;
-
-    //     @media @phone {
-    //         flex-direction: row;
-    //         max-width: 100%;
-    //         flex-wrap: wrap;
-    //         // align-content: center;
-    //         justify-content: center;
-    //     }
-
-    //     h1 {
-    //         font-size: 5rem;
-    //         line-height: 6rem;
-    //         color: @flexdarkblue;
-
-    //         @media @phone {
-    //         }
-
-            
-    //     }
-    //     h1:last-of-type{
-    //         color: @flexlightblue;
-    //         line-height: 6rem;
-    //     }
-    
-    
-
-       
+        .textHolder {
+            max-width: 80%;
+            margin: 2rem auto;
+            text-align: center;
 
 
-
-    // }
-
-
-        p {
-            margin-top: 2rem;
-            line-height: 3rem;
-            font-size: 2.3rem;
-            color: black;
         }
 
     .imgHolder {
@@ -76,14 +35,30 @@
 
         }
     }
+
+    .headInfo {
+        max-width: 80%;
+                margin: 2rem auto;
+                text-align: center;
+
+                h2 {
+                    font-weight: 600;
+
+                }
+                p {
+                    margin-top: 2rem;
+                    line-height: 3rem;
+                    font-size: 2.3rem;
+                    color: black;
+                    font-weight: 300;
+                }
+    }
     
     }
 
 
-    // .care {
-        // background: blue;
-        // width: 300rem;
-        // height: 300rem;
+
+
 
         .main {
             display: flex;
@@ -132,10 +107,11 @@
             flex-direction: row;
             max-width: 80%;
             margin: 0 auto;
+            justify-content: space-between;
 
 
             .textHolder {
-                max-width: 50%;
+                max-width: 40%;
                 display: flex;
                 flex-direction: column;
 
@@ -152,12 +128,10 @@
                 }
             }
             .imageHolder {
-                max-width: 50%;
-                // max-height: 100%;
+                max-width: 40%;
                 img {
-                    max-width: 100%;
-                    // max-height: 100%;
-                    // border-radius: 50%;
+                    max-width: 80%;
+                    border-radius: 50%;
 
                 }
             }
