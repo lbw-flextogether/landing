@@ -179,6 +179,7 @@ p {
   color: white;
   padding: 1rem 0;
   margin: 0 auto;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   .navContainer .navBar {
@@ -245,6 +246,9 @@ p {
 }
 .navContainer .navBar nav.mobile .dropdown .visible {
   display: flex;
+}
+.navContainer .navBar .sticky {
+  position: fixed;
 }
 .footerContainer {
   background: #002147;
