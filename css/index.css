@@ -213,6 +213,7 @@ h2 {
 }
 h2 .social {
   color: #279ccf;
+  padding-left: 5px;
 }
 nav {
   display: flex;
@@ -340,7 +341,7 @@ body {
   background-image: url("/img/pilates.png"), url("/img/trainer.png");
   background-position: top right, top left;
   background-repeat: no-repeat;
-  background-size: 454px;
+  background-size: 434px;
 }
 .home-page {
   background: #F1F0EE;
