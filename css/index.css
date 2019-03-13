@@ -337,7 +337,9 @@ button:hover {
   }
 }
 body {
-  background: #f9f9f9;
+  background-color: #279ccf;
+  background: #279ccf;
+  background: linear-gradient(white, #279ccf, white);
 }
 .home-page {
   background: #F1F0EE;
