@@ -6,4 +6,21 @@
 let navBar = document.querySelector(".navBar");
 console.log(navBar)
 
-//
+//calculating position
+
+let sticky = navBar.offsetTop;
+console.log(sticky)
+
+//function declaration
+
+function scrollEvent() {
+    if (window.pageYOffset >= sticky) {
+        navBar.classList.add("sticky")
+    }
+    else {
+        navBar.classList.remove("sticky")
+    }
+}
+
+//listening and invokation!
+
