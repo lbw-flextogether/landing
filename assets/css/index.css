@@ -582,26 +582,22 @@ p {
 }
 .together {
   border: 1px solid red;
-  height: 100rem;
+  max-height: 100%;
 }
 .together .toghetherContent {
   background: yellow;
   max-height: 100%;
+  height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 5rem 0;
-  margin: 0 auto;
+  padding: 5% 0;
 }
 .together .toghetherContent .textWBtn {
   display: flex;
   flex-direction: column;
   width: 45%;
-}
-.together .toghetherContent .textWBtn .textHolder p {
-  line-height: 3rem;
-  margin: 3rem 0;
 }
 .together .toghetherContent .textWBtn button {
   background: red;
@@ -638,26 +634,49 @@ p {
   font-size: 2.3rem;
   color: black;
 }
-.care {
-  background: blue;
-  width: 300rem;
-  height: 300rem;
-}
-.partners {
-  background: yellow;
-  width: 300rem;
-  height: 300rem;
-}
-.imgHolder {
+.head2 .imgHolder {
   max-width: 100%;
   margin: 0 2rem;
 }
 @media (max-width: 500px) {
-  .imgHolder {
+  .head2 .imgHolder {
     max-width: 100%;
     margin: 0 1rem 2rem 1rem;
   }
 }
-.imgHolder img {
+.head2 .imgHolder img {
   max-width: 100%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main .imgHolder {
+  max-width: 100%;
+  margin: 0 2rem;
+}
+@media (max-width: 500px) {
+  .main .imgHolder {
+    max-width: 100%;
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.main .imgHolder img {
+  max-width: 100%;
+}
+.main .textContent p {
+  margin-top: 2rem;
+  line-height: 3rem;
+  font-size: 2.3rem;
+  color: black;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.content .textHolder {
+  width: 50%;
+}
+.partners {
+  background: yellow;
 }
