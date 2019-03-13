@@ -336,11 +336,6 @@ button:hover {
     margin-top: 10px;
   }
 }
-body {
-  background-color: #279ccf;
-  background: #279ccf;
-  background: linear-gradient(white, #279ccf, white);
-}
 .home-page {
   background: #F1F0EE;
   margin: 20px 10px 20px 10px;
