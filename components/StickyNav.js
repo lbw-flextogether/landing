@@ -30,6 +30,7 @@ class Home {
     }
     scrollToTop(){
         document.documentElement.scrollTop = 0;
+        console.log(homeBtn.hash)
     }
 }
 

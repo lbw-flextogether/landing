@@ -233,6 +233,9 @@ p {
 .navContainer .navBar nav button:hover {
   color: white;
 }
+.navContainer .navBar nav .activeNav {
+  background: white;
+}
 .navContainer .navBar nav.mobile {
   display: none;
 }
