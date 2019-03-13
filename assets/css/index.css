@@ -345,6 +345,8 @@ p {
 @media (max-width: 500px) {
   .container .head {
     flex-direction: column-reverse;
+    background: yellow;
+    color: yellow;
     padding: 2.5rem 0 4rem 0;
   }
 }
@@ -578,6 +580,42 @@ p {
 .contentSquares .square2 .squareText p {
   font-size: 2.5rem;
 }
+.together {
+  border: 1px solid red;
+  height: 100rem;
+}
+.together .toghetherContent {
+  background: yellow;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+.together .toghetherContent .textWBtn {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.together .toghetherContent .textWBtn .textHolder p {
+  line-height: 3rem;
+  margin: 3rem 0;
+}
+.together .toghetherContent .textWBtn button {
+  background: red;
+}
+.together .toghetherContent .imageHolder {
+  width: 45%;
+}
+.together .toghetherContent .imageHolder img {
+  max-width: 100%;
+}
+.together .careIndex {
+  border: 1px dashed blue;
+  flex-direction: row-reverse;
+}
 .head2 {
   display: flex;
   flex-direction: column;
@@ -593,31 +631,6 @@ p {
     flex-direction: column-reverse;
     padding: 2.5rem 0 4rem 0;
   }
-}
-.head2 .textHolder {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  text-align: left;
-  margin: 0 2rem;
-  padding-right: -1rem;
-}
-@media (max-width: 500px) {
-  .head2 .textHolder {
-    flex-direction: row;
-    max-width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-.head2 .textHolder h1 {
-  font-size: 5rem;
-  line-height: 6rem;
-  color: #002147;
-}
-.head2 .textHolder h1:last-of-type {
-  color: #279ccf;
-  line-height: 6rem;
 }
 .head2 p {
   margin-top: 2rem;

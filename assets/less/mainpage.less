@@ -26,6 +26,8 @@
 
     @media @phone {
         flex-direction: column-reverse;
+        background: yellow;
+        color: yellow;
         padding: 2.5rem 0 4rem 0;
     }
 
@@ -50,6 +52,7 @@
             font-size: 5rem;
             line-height: 6rem;
             color: @flexdarkblue;
+            // width: fit-content;
 
             @media @phone {
             }
@@ -293,6 +296,71 @@
         }
     }
     }
+
+
+.together {
+    border: 1px solid red;
+    height: 100rem;
+
+    .toghetherContent {
+        background: yellow;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5rem 0;
+        margin: 0 auto;
+
+        .textWBtn {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+
+            .textHolder {
+
+                p {
+                    line-height: 3rem;
+                    margin: 3rem 0;
+                }
+
+
+            }
+
+            button {
+                background: red;
+            }
+
+        }
+
+        .imageHolder {
+            width: 45%;
+
+            img {
+                max-width: 100%;
+                // max-height: 100%;
+
+            }
+        }
+
+    }
+
+    
+
+    .careIndex {
+        border: 1px dashed blue;
+        flex-direction: row-reverse;
+
+    }
+
+
+    .partnerIndex {
+
+    }
+
+}
+
+
 
 
 
