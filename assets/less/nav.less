@@ -1,6 +1,8 @@
 .navContainer {
   background: @flexdarkblue;
   padding: 1rem 0;
+  overflow: hidden;
+  z-index: 1;
 
   .navBar {
     width: 95%;
@@ -11,7 +13,6 @@
     color: white;
     padding: 1rem 0;
     margin: 0 auto;
-    overflow: hidden;
 
     @media @phone {
       justify-content: center;
@@ -76,15 +77,25 @@
 
   }
 
-  .sticky {
-    position: fixed;
-    
-  }
 
 
 
 }
+ 
 
 
 }
+@media (min-height: 500px) {
+
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+  
+}
+}
+
+
 
