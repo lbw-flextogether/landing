@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="./components/Buttons.js" defer></script>
     <script src="./components/StickyNav.js" defer></script>
+    <script src="./components/Menu.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
@@ -25,23 +26,22 @@
           <h2>FlexTogether</h2>
         </div>
         <nav>
-          <a href="#home" class="home">HOME</a>
-          <a href="#about">ABOUT</a>
-          <a href="#features">FEATURES</a>
-          <button class="navBtn react">REACTAPP</button>
+          <a href="#" class="home">HOME</a>
+          <a href="#about" class="noBar">ABOUT</a>
+          <a href="#features" class="noBar">FEATURES</a>
+          <a href="#industry" class="noBar">INDUSTRY</a>
+          <button class="navBtn react">Sign Up</button>
         </nav>
-        <nav class="mobile">
-            <img class="mobileNavBtn" src="./assets/img/menu.png">
-            <div class="dropdown">
-                <ul>
-                    <li>ABOUT</li>
-                    <li>WHO</li>
-                    <li>LOG IN</li>
-                    <li>SIGN UP</li>
-                </ul>
+      
+      <nav class="mobile">
+            <img class="slideBtn" src="./assets/img/menu.png">
+            <div class="slideContent slideHidden">
+                        <a href="#" class="slideLink">HOME</a>
+                        <a href="#about" class="slideLink">ABOUT</a>
+                        <a href="#features" class="slideLink">FEATURES</a>
+                        <a href="#industry" class="slideLink">INDUSTRY</a>
             </div>
-        </nav>
-      </div>
+        </div>
     </section>
 
 
@@ -82,6 +82,7 @@
             <div class="h2">
                 <h2>Get Motivated,</h2>
                 <h2>Have Fun</h2>
+                <button>Join</button>
             </div>
             <div class="p">
                 <p>
@@ -143,7 +144,6 @@
 
 <footer>
     <h2>FlexTogether</h2>
-    <button class="footerBtn react">LOG IN</button>
     <button class="footerBt react">SIGN UP</button>
 </footer>
 </section>

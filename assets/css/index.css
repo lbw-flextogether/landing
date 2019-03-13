@@ -186,6 +186,8 @@ p {
 @media (max-width: 500px) {
   .navContainer .navBar {
     justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 }
 .navContainer .navBar .navLogo {
@@ -194,8 +196,7 @@ p {
 }
 @media (max-width: 500px) {
   .navContainer .navBar .navLogo {
-    width: 50%;
-    position: absolute;
+    width: fit-content;
   }
 }
 .navContainer .navBar .navLogo h2 {
@@ -223,11 +224,12 @@ p {
 }
 .navContainer .navBar nav button {
   font-size: 2rem;
-  width: 15%;
-  height: 5rem;
+  text-align: center;
   background: #279ccf;
+  color: white;
   border: none;
-  padding: 0;
+  border-radius: 5%;
+  padding: 1.1rem 1rem;
   margin: 0;
 }
 .navContainer .navBar nav button:hover {
@@ -236,21 +238,45 @@ p {
 .navContainer .navBar nav .activeNav {
   background: white;
 }
-.navContainer .navBar nav.mobile {
+.navContainer .navBar .mobile {
   display: none;
 }
 @media (max-width: 500px) {
-  .navContainer .navBar nav.mobile {
+  .navContainer .navBar .mobile {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 20%;
+    z-index: 2;
   }
-}
-.navContainer .navBar nav.mobile .dropdown {
-  display: none;
-}
-.navContainer .navBar nav.mobile .dropdown .visible {
-  display: flex;
+  .navContainer .navBar .mobile .slideBtn {
+    width: fit-content;
+  }
+  .navContainer .navBar .mobile .slideContent {
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    border: 2.5px solid red;
+    margin: 10rem 0;
+  }
+  .navContainer .navBar .mobile .slideLink {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: red;
+  }
+  .navContainer .navBar .mobile .slideLink:hover {
+    color: white;
+    background-color: red;
+  }
+  .navContainer .navBar .mobile .slideHidden {
+    display: none;
+  }
 }
 @media (min-height: 500px) {
   .sticky {
@@ -282,11 +308,12 @@ p {
 }
 .footerContainer footer button {
   font-size: 2rem;
-  width: 15%;
-  height: 5rem;
+  text-align: center;
   background: #279ccf;
+  color: white;
   border: none;
-  padding: 0;
+  border-radius: 5%;
+  padding: 1.1rem 1rem;
   margin: 0;
 }
 .footerContainer footer button:hover {
@@ -445,14 +472,27 @@ p {
 .body .bodyContent .textHolder2 .h2 h2:first-child {
   color: #279ccf;
 }
-.body .bodyContent .textHolder2 .h2 h2:last-child {
+.body .bodyContent .textHolder2 .h2 h2:last-of-type {
   color: white;
   line-height: 15rem;
 }
 @media (max-width: 500px) {
-  .body .bodyContent .textHolder2 .h2 h2:last-child {
+  .body .bodyContent .textHolder2 .h2 h2:last-of-type {
     line-height: 5rem;
   }
+}
+.body .bodyContent .textHolder2 .h2 button {
+  font-size: 2rem;
+  text-align: center;
+  background: #279ccf;
+  color: white;
+  border: none;
+  border-radius: 5%;
+  padding: 2rem;
+  margin: 0;
+}
+.body .bodyContent .textHolder2 .h2 button:hover {
+  color: white;
 }
 .body .bodyContent .textHolder2 .p {
   width: 40%;

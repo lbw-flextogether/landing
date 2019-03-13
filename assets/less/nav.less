@@ -16,6 +16,8 @@
 
     @media @phone {
       justify-content: center;
+      align-items: center;
+      align-content: center;
     }
 
     .navLogo {
@@ -23,8 +25,8 @@
       width: 50%;
 
       @media @phone {
-        width: 50%;
-        position: absolute;
+        width: fit-content;
+        // position: absolute;
       }
       h2 {
         font-family: "Lato";
@@ -52,7 +54,7 @@
       }
       button {
         font-size: 2rem;
-        .my-button();
+        .tbBtn();
       }
 
       .activeNav {
@@ -60,37 +62,72 @@
       }
     }
 
-    nav.mobile {
-      display: none;
 
-      @media @phone {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        img {
-        }
-      }
-      .dropdown{
-        display: none;
 
-        .visible {
-          display: flex;
-        
-      }
+
+
+ 
+.mobile {
+  display: none;
+
+  @media @phone {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    z-index: 2;
+
+    .slideBtn {
+      // position: fixed;
+      // z-index: auto;
+      width: fit-content;
+      // float: right;
+
     }
+  
+  .slideContent{
+    // display: flex;
+    // flex-direction: column;
+    // background-color: lavender;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-top: 10px;
+    border: 2.5px solid red;
+    margin: 10rem 0;
+  }
+
+  .slideLink {
+
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: red;
+    &:hover {
+      color: white;
+      background-color: red;
+
 
   }
 
 
 
+}
+.slideHidden{
+  display: none;
+}
+
 
 }
- 
-
+  }
+}
 
 }
 @media (min-height: 500px) {
-
 
 .sticky {
   position: sticky;
@@ -101,6 +138,7 @@
   
 }
 }
+
 
 
 

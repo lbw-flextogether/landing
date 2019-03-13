@@ -53,13 +53,17 @@
 
             @media @phone {
             }
-        }
 
+            
+        }
         h1:last-of-type{
             color: @flexlightblue;
             line-height: 6rem;
         }
     
+    
+
+       
 
 
 
@@ -175,13 +179,16 @@
                 h2:first-child{
                     color: @flexlightblue;
                 }
-                h2:last-child {
+                h2:last-of-type {
                     color: white;
                     line-height: 15rem;
 
                     @media @phone {
                         line-height: 5rem;
                     }
+                }
+                button {
+                    .pageBtn()
                 }
             }
             .p {
