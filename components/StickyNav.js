@@ -12,17 +12,30 @@ let sticky = navBar.offsetTop;
 function scrollEvent() {
     if (window.pageYOffset > sticky) {
         navBar.classList.add("sticky")
-        console.log("time to stick")
     }
     else {
         navBar.classList.remove("sticky")
-        console.log("unstick")
     }
-    // console.log('hi')
 }
 
 //listening and invokation!
 window.onscroll = function() {scrollEvent()};
+
+
+// Add Home button that takes us to top of entire doc!
+class Home {
+    constructor(homeBtn) {
+        this.homeBtn = homeBtn;
+        this.homeBtn.addEventListener('click', ()   =>  this.scrollToTop())
+    }
+    scrollToTop(){
+        document.documentElement.scrollTop = 0;
+    }
+}
+
+
+let homeBtn = document.querySelectorAll(".home");
+homeBtn.forEach(    (homeBtn)   =>  new Home(homeBtn))
 
 
 
