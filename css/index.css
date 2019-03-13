@@ -484,3 +484,8 @@ nav {
     font-size: 30px;
   }
 }
+@media (max-width: 500px) {
+  .bottom-info .simple h3 {
+    padding-bottom: 10px;
+  }
+}
