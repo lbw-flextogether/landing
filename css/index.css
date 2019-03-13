@@ -160,7 +160,7 @@ h5 {
 }
 .dropdown .dropdown-button:hover {
   background-color: #279ccf;
-  border: 5px solid #279ccf;
+  border: 2px solid #279ccf;
 }
 .dropdown .dropdown-content {
   width: 100%;
@@ -333,7 +333,7 @@ nav {
   border-top: solid 2px #e2dddd;
 }
 .bottom-info h3 {
-  font-size: 16.39px;
+  font-size: 24px;
   font-weight: 700;
   padding-bottom: 10px;
 }
@@ -346,6 +346,9 @@ nav {
   width: 50%;
   padding-bottom: 15px;
 }
+.motivate p {
+  font-size: 16px;
+}
 .simple {
   width: 50%;
   padding: 30px 10px 10px 10px;
@@ -354,6 +357,14 @@ nav {
   width: 60%;
   border-radius: 6px;
   margin-bottom: 15px;
+}
+.simple p {
+  font-size: 15px;
+}
+@media (max-width: 1000px) {
+  .simple .simHead {
+    padding-bottom: 40px;
+  }
 }
 @media (max-width: 500px) {
   .sixExercise {
@@ -420,6 +431,19 @@ nav {
   width: 234px;
   height: 234px;
   border-radius: 100%;
+  padding-bottom: 0;
+  margin-bottom: 30px;
+}
+.middle-info h3 {
+  font-size: 35px;
+}
+.middle-info h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.middle-info p {
+  padding-bottom: 15px;
 }
 @media (max-width: 500px) {
   .top-info {
