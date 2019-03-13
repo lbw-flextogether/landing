@@ -578,3 +578,73 @@ p {
 .contentSquares .square2 .squareText p {
   font-size: 2.5rem;
 }
+.head2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 0 8rem 0;
+  width: 100%;
+  background: #f5f8fa;
+  margin: 0 0 4rem 0;
+}
+@media (max-width: 500px) {
+  .head2 {
+    flex-direction: column-reverse;
+    padding: 2.5rem 0 4rem 0;
+  }
+}
+.head2 .textHolder {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  text-align: left;
+  margin: 0 2rem;
+  padding-right: -1rem;
+}
+@media (max-width: 500px) {
+  .head2 .textHolder {
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.head2 .textHolder h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+  color: #002147;
+}
+.head2 .textHolder h1:last-of-type {
+  color: #279ccf;
+  line-height: 6rem;
+}
+.head2 p {
+  margin-top: 2rem;
+  line-height: 3rem;
+  font-size: 2.3rem;
+  color: black;
+}
+.care {
+  background: blue;
+  width: 300rem;
+  height: 300rem;
+}
+.partners {
+  background: yellow;
+  width: 300rem;
+  height: 300rem;
+}
+.imgHolder {
+  max-width: 100%;
+  margin: 0 2rem;
+}
+@media (max-width: 500px) {
+  .imgHolder {
+    max-width: 100%;
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.imgHolder img {
+  max-width: 100%;
+}
