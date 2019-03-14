@@ -5,7 +5,6 @@
 	width: 100%;
 
 	@media @tablet {
-		background: red;
 	}
 
 	@media @phone {
@@ -22,6 +21,10 @@
 		background: @flexgray;
 		margin: 0 0 4rem 0;
 
+		@media @tablet {
+			flex-direction: column-reverse;
+		}
+
 		@media @phone {
 			flex-direction: column-reverse;
 			// background: yellow;
@@ -36,6 +39,11 @@
 			text-align: left;
 			margin: 0 2rem;
 			padding-right: -1rem;
+
+			@media @tablet {
+				max-width: 100%;
+				text-align: center;
+			}
 
 			@media @phone {
 				flex-direction: column;
@@ -72,6 +80,11 @@
 	.vidHolder {
 		max-width: 55%;
 		margin: 0 2rem;
+
+		@media @tablet {
+			max-width: 100%;
+			margin-bottom: 4rem;
+		}
 
 		@media @phone {
 			max-width: 100%;

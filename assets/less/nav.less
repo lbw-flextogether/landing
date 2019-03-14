@@ -3,6 +3,7 @@
 	padding: 1rem 0;
 	overflow: hidden;
 	margin: 0 auto;
+	width: 100%;
 
 	.navBar {
 		width: 95%;
@@ -10,9 +11,14 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: baseline;
+		align-content: baseline;
 		color: white;
 		padding: 1rem 0;
 		margin: 0 auto;
+
+		@media @tablet {
+			align-items: center;
+		}
 
 		@media @phone {
 			justify-content: space-evenly;
@@ -23,7 +29,8 @@
 
 		.navLogo {
 			font-size: 3rem;
-			width: 50%;
+			width: 30%;
+			margin: 0 auto;
 
 			@media @phone {
 				width: fit-content;
@@ -32,6 +39,7 @@
 			h2 {
 				font-family: "Lato";
 				font-weight: 330;
+				width: fit-content;
 			}
 		}
 
@@ -39,10 +47,17 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
+			align-content: space-between;
 			align-items: baseline;
-			width: 50%;
+			width: 60%;
 			font-family: "Lato";
 			font-weight: 300;
+			margin: 0 auto;
+
+			@media @tablet {
+				display: flex-end;
+				width: fit-content;
+			}
 
 			@media @phone {
 				display: none;
@@ -52,10 +67,19 @@
 				text-decoration: none;
 				font-size: 2rem;
 				color: white;
+				width: fit-content;
+
+				@media @tablet {
+					display: none;
+				}
 			}
 			button {
 				font-size: 2rem;
 				.tbBtn();
+
+				@media @tablet {
+					display: none;
+				}
 			}
 
 			.activeNav {
@@ -67,6 +91,13 @@
 			display: none;
 
 			@media @phone {
+				display: flex;
+				width: fit-content;
+				display: column;
+				z-index: 2;
+			}
+
+			@media @tablet {
 				display: flex;
 				width: fit-content;
 				display: column;

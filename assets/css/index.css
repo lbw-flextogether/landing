@@ -173,6 +173,7 @@ p {
   padding: 1rem 0;
   overflow: hidden;
   margin: 0 auto;
+  width: 100%;
 }
 .navContainer .navBar {
   width: 95%;
@@ -180,9 +181,15 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  align-content: baseline;
   color: white;
   padding: 1rem 0;
   margin: 0 auto;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .navContainer .navBar {
+    align-items: center;
+  }
 }
 @media (max-width: 500px) {
   .navContainer .navBar {
@@ -192,7 +199,8 @@ p {
 }
 .navContainer .navBar .navLogo {
   font-size: 3rem;
-  width: 50%;
+  width: 30%;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .navContainer .navBar .navLogo {
@@ -202,15 +210,24 @@ p {
 .navContainer .navBar .navLogo h2 {
   font-family: "Lato";
   font-weight: 330;
+  width: fit-content;
 }
 .navContainer .navBar nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-content: space-between;
   align-items: baseline;
-  width: 50%;
+  width: 60%;
   font-family: "Lato";
   font-weight: 300;
+  margin: 0 auto;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .navContainer .navBar nav {
+    display: flex-end;
+    width: fit-content;
+  }
 }
 @media (max-width: 500px) {
   .navContainer .navBar nav {
@@ -221,6 +238,12 @@ p {
   text-decoration: none;
   font-size: 2rem;
   color: white;
+  width: fit-content;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .navContainer .navBar nav a {
+    display: none;
+  }
 }
 .navContainer .navBar nav button {
   font-size: 2rem;
@@ -235,6 +258,11 @@ p {
 .navContainer .navBar nav button:hover {
   color: white;
 }
+@media (min-width: 502px) and (max-width: 999px) {
+  .navContainer .navBar nav button {
+    display: none;
+  }
+}
 .navContainer .navBar nav .activeNav {
   background: white;
 }
@@ -242,6 +270,14 @@ p {
   display: none;
 }
 @media (max-width: 500px) {
+  .navContainer .navBar .mobile {
+    display: flex;
+    width: fit-content;
+    display: column;
+    z-index: 2;
+  }
+}
+@media (min-width: 502px) and (max-width: 999px) {
   .navContainer .navBar .mobile {
     display: flex;
     width: fit-content;
@@ -296,7 +332,7 @@ p {
 }
 .footerContainer {
   background: #002147;
-  margin: inherit;
+  margin: 0 auto;
 }
 .footerContainer footer {
   width: 95%;
@@ -332,11 +368,6 @@ p {
   margin: 0 auto;
   width: 100%;
 }
-@media (min-width: 800px) and (max-width: 999px) {
-  .container {
-    background: red;
-  }
-}
 @media (max-width: 500px) {
 }
 .container .head {
@@ -348,6 +379,11 @@ p {
   width: 100%;
   background: #f5f8fa;
   margin: 0 0 4rem 0;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .container .head {
+    flex-direction: column-reverse;
+  }
 }
 @media (max-width: 500px) {
   .container .head {
@@ -362,6 +398,12 @@ p {
   text-align: left;
   margin: 0 2rem;
   padding-right: -1rem;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .container .head .textHolder {
+    max-width: 100%;
+    text-align: center;
+  }
 }
 @media (max-width: 500px) {
   .container .head .textHolder {
@@ -389,6 +431,12 @@ p {
 .container .vidHolder {
   max-width: 55%;
   margin: 0 2rem;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .container .vidHolder {
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
 }
 @media (max-width: 500px) {
   .container .vidHolder {
