@@ -95,10 +95,24 @@
 	padding: 5rem 0;
 	align-items: center;
 
+	@media @phone {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+
 	.textHolder {
 		max-width: 40%;
 		display: flex;
 		flex-direction: column;
+
+		@media @phone {
+			max-width: 100%;
+			align-items: center;
+			align-content: center;
+			text-align: center;
+		}
 
 		h3 {
 			margin: 2rem auto;
@@ -106,6 +120,12 @@
 		}
 		.contentHold {
 			margin: 1rem 0 1rem 3rem;
+
+			@media @phone {
+				margin: 1rem auto;
+				width: auto;
+				text-align: center;
+			}
 			h4 {
 				margin: 0.8rem auto;
 				font-size: 2.3rem;
@@ -119,9 +139,17 @@
 	}
 	.imageHolder {
 		max-width: 40%;
+
+		@media @phone {
+			max-width: 80%;
+		}
 		img {
 			max-width: 80%;
 			border-radius: 50%;
+
+			@media @phone {
+				max-width: 100%;
+			}
 		}
 	}
 }

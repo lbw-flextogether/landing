@@ -741,10 +741,26 @@ p {
   padding: 5rem 0;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .contentIndustry {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
 .contentIndustry .textHolder {
   max-width: 40%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .contentIndustry .textHolder {
+    max-width: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
 }
 .contentIndustry .textHolder h3 {
   margin: 2rem auto;
@@ -752,6 +768,13 @@ p {
 }
 .contentIndustry .textHolder .contentHold {
   margin: 1rem 0 1rem 3rem;
+}
+@media (max-width: 500px) {
+  .contentIndustry .textHolder .contentHold {
+    margin: 1rem auto;
+    width: auto;
+    text-align: center;
+  }
 }
 .contentIndustry .textHolder .contentHold h4 {
   margin: 0.8rem auto;
@@ -765,9 +788,19 @@ p {
 .contentIndustry .imageHolder {
   max-width: 40%;
 }
+@media (max-width: 500px) {
+  .contentIndustry .imageHolder {
+    max-width: 80%;
+  }
+}
 .contentIndustry .imageHolder img {
   max-width: 80%;
   border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .contentIndustry .imageHolder img {
+    max-width: 100%;
+  }
 }
 .contactHeading {
   text-align: center;
