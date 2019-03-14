@@ -5,14 +5,26 @@
 	footer {
 		width: 95%;
 		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
 
 		.footerItems {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-evenly;
+			justify-content: space-between;
+			width: 95%;
 			padding: 2rem 0;
 
-			button {
+			.footerBtn {
+				border-radius: 10px;
+				border: 0.04rem solid #fff;
+				color: #fff;
+				overflow: hidden;
+				text-align: center;
+				margin: 0 0.3%;
+				padding: 1% 3%;
+				width: fit-content;
+				font-size: 250%;
 			}
 		}
 	}

@@ -21,11 +21,10 @@
 						<h2>FlexTogether</h2>
 					</div>
 					<nav>
-						<a href="#" class="home">HOME</a>
-						<a href="#about" class="noBar">ABOUT</a>
-						<a href="#features" class="noBar">FEATURES</a>
-						<a href="#together" class="noBar">TOGETHER</a>
-						<!-- <button class="navBtn react">SIGN UP</button> -->
+						<a href="#" class="home growNav">HOME</a>
+						<a href="#about" class="noBar growNav">ABOUT</a>
+						<a href="#features" class="noBar growNav">FEATURES</a>
+						<a href="#together" class="noBar growNav">TOGETHER</a>
 						<button class="btn btn-signUp react">SIGN UP</button>
 					</nav>
 
@@ -183,10 +182,15 @@
 			<section class="footerContainer">
 				<footer>
 					<div class="footerItems">
-						<button onclick="window.open(`./contact.html`)">CONTACT</button>
-						<button class="footerBtn">SIGN UP</button>
+						<button
+							class="btn footerBtn growNav"
+							onclick="window.open(`./contact.html`)"
+						>
+							CONTACT
+						</button>
 
-						<button class="home">TOP</button>
+						<button class="btn footerBtn growNav home">TOP</button>
+						<button class="btn footerBtn growNav">PARTNER</button>
 					</div>
 				</footer>
 			</section>
