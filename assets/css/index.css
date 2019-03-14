@@ -723,7 +723,8 @@ p {
 }
 @media (max-width: 500px) {
   .contentSquares .square1 .squareText {
-    width: 95%;
+    width: 100%;
+    text-align: center;
   }
 }
 .contentSquares .square1 .squareText h2 {
@@ -763,6 +764,11 @@ p {
 .contentSquares .square2 .squareImg {
   width: 45%;
 }
+@media (max-width: 500px) {
+  .contentSquares .square2 .squareImg {
+    width: 100%;
+  }
+}
 .contentSquares .square2 .squareImg .squarePic {
   max-width: 100%;
 }
@@ -770,6 +776,11 @@ p {
   width: 45%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .contentSquares .square2 .squareText {
+    width: 100%;
+  }
 }
 .contentSquares .square2 .squareText h2 {
   margin: 1rem 0;
