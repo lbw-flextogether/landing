@@ -388,6 +388,9 @@
 
 .together {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
 
 	.toghetherContent {
 		max-width: 95%;
@@ -396,6 +399,8 @@
 		justify-content: space-between;
 		align-items: center;
 		margin: 5rem auto;
+		overflow: auto;
+		height: 100%;
 
 		@media @tablet {
 			flex-direction: column-reverse;
@@ -485,6 +490,7 @@
 		.imageHolderTg {
 			width: 45%;
 			// margin: 0 auto;
+			// height: 100%;
 			@media @tablet {
 				width: fit-content;
 				margin: 0 auto;

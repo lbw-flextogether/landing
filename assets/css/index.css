@@ -746,6 +746,9 @@ p {
 }
 .together {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 .together .toghetherContent {
   max-width: 95%;
@@ -754,6 +757,8 @@ p {
   justify-content: space-between;
   align-items: center;
   margin: 5rem auto;
+  overflow: auto;
+  height: 100%;
 }
 @media (min-width: 502px) and (max-width: 999px) {
   .together .toghetherContent {
