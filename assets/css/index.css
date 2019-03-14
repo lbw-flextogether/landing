@@ -135,6 +135,7 @@ body {
   width: 100%;
   margin: 0 auto;
   scroll-behavior: smooth;
+  z-index: -1;
 }
 h1,
 h2,
@@ -171,7 +172,7 @@ p {
   background: #002147;
   padding: 1rem 0;
   overflow: hidden;
-  z-index: 1;
+  margin: 0 auto;
 }
 .navContainer .navBar {
   width: 95%;
@@ -185,9 +186,8 @@ p {
 }
 @media (max-width: 500px) {
   .navContainer .navBar {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    justify-content: space-evenly;
+    align-items: normal;
   }
 }
 .navContainer .navBar .navLogo {
@@ -244,39 +244,45 @@ p {
 @media (max-width: 500px) {
   .navContainer .navBar .mobile {
     display: flex;
-    justify-content: flex-end;
-    width: 20%;
+    width: fit-content;
+    display: column;
     z-index: 2;
   }
-  .navContainer .navBar .mobile .slideBtn {
-    width: fit-content;
-  }
-  .navContainer .navBar .mobile .slideContent {
-    width: 100%;
-    position: absolute;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    border: 2.5px solid red;
-    margin: 10rem 0;
-  }
-  .navContainer .navBar .mobile .slideLink {
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 18px;
-    text-decoration: none;
-    color: red;
-  }
-  .navContainer .navBar .mobile .slideLink:hover {
-    color: white;
-    background-color: red;
-  }
-  .navContainer .navBar .mobile .slideHidden {
-    display: none;
-  }
+}
+.navContainer .navBar .mobile .slideBtn {
+  width: fit-content;
+}
+.slideMenu {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.slideMenu .slideContent {
+  background-color: lavender;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2.5px solid red;
+  margin: auto;
+  z-index: 1;
+}
+.slideMenu .slideLink {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: red;
+}
+.slideMenu .slideLink:hover {
+  color: white;
+  background-color: red;
+}
+.slideMenu .slideHidden {
+  display: none;
 }
 @media (min-height: 500px) {
   .sticky {
@@ -285,6 +291,7 @@ p {
     top: 0;
     width: 100%;
     opacity: 0.95;
+    z-index: 1;
   }
 }
 .footerContainer {
@@ -358,10 +365,10 @@ p {
 }
 @media (max-width: 500px) {
   .container .head .textHolder {
-    flex-direction: row;
+    flex-direction: column;
     max-width: 100%;
-    flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
   }
 }
 .container .head .textHolder h1 {
@@ -450,7 +457,6 @@ p {
   .body .bodyContent .textHolder2 {
     flex-direction: column;
     align-items: baseline;
-    padding-left: 10%;
   }
 }
 .body .bodyContent .textHolder2 .h2 {
@@ -463,10 +469,12 @@ p {
   .body .bodyContent .textHolder2 .h2 {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
+    width: fit-content;
     padding-left: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin: 0 auto;
   }
 }
 .body .bodyContent .textHolder2 .h2 h2:first-child {
@@ -502,10 +510,11 @@ p {
 @media (max-width: 500px) {
   .body .bodyContent .textHolder2 .p {
     padding-left: 0;
-    width: 90%;
+    width: 80%;
     display: flex;
     align-items: center;
     padding-top: 8%;
+    margin: 0 auto;
   }
 }
 .body .bodyContent .textHolder2 .p p {
@@ -514,6 +523,11 @@ p {
   font-weight: 300;
   color: white;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .body .bodyContent .textHolder2 .p p {
+    font-size: 2.1rem;
+  }
 }
 .contentSquares {
   margin: 10rem 0;
@@ -563,6 +577,12 @@ p {
   width: 95%;
   margin: 0 auto;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .contentSquares .square2 {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .contentSquares .square2 .squareImg {
   width: 45%;

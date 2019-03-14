@@ -12,7 +12,7 @@ let sticky = navBar.offsetTop;
 function scrollEvent() {
 	if (window.pageYOffset > sticky) {
 		navBar.classList.add("sticky");
-		console.log("stick");
+		// console.log("stick");
 	} else {
 		navBar.classList.remove("sticky");
 	}
