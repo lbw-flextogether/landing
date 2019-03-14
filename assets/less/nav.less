@@ -4,6 +4,8 @@
 	overflow: hidden;
 	margin: 0 auto;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
 
 	.navBar {
 		width: 95%;
@@ -109,7 +111,69 @@
 			}
 		}
 	}
+	.navMap {
+		width: 100%;
+		.navBar {
+			width: 95%;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: baseline;
+			align-content: baseline;
+			color: white;
+			padding: 1rem 0;
+			margin: 0 auto;
+
+			@media @tablet {
+				align-items: center;
+			}
+
+			@media @phone {
+				justify-content: space-evenly;
+				// align-items: center;
+				// align-content: center;
+				align-items: normal;
+			}
+
+			nav {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				width: 100%;
+				font-family: "Lato";
+				font-weight: 300;
+				margin: 0 auto;
+
+				@media @tablet {
+					display: flex-end;
+					width: fit-content;
+				}
+
+				@media @phone {
+					display: none;
+				}
+
+				a {
+					text-decoration: none;
+					font-size: 1.65rem;
+					color: white;
+					width: 10%;
+					font-weight: 50;
+
+					@media @tablet {
+						display: none;
+					}
+				}
+				button {
+					@media @tablet {
+						display: none;
+					}
+				}
+			}
+		}
+	}
 }
+
 .slideMenu {
 	position: fixed;
 	width: 100%;
