@@ -329,6 +329,13 @@ body {
 .middle-info p {
   padding-bottom: 15px;
 }
+.lead {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
 @media (max-width: 500px) {
   .top-info {
     display: block;
@@ -404,6 +411,7 @@ nav {
   display: flex;
   line-height: 1.3;
   border-top: solid 2px #e2dddd;
+  border-bottom: solid 2px #e2dddd;
 }
 .bottom-info h3 {
   font-size: 24px;
@@ -542,7 +550,7 @@ nav {
 @media (max-width: 500px) {
   body {
     background-image: url(/img/pilates.png), url(/img/trainer.png);
-    background-position: center top 12%;
+    background-position: center top 13%;
     background-repeat: no-repeat;
     background-size: 410px, 0;
   }
