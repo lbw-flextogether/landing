@@ -150,12 +150,19 @@
 			background: @darkblue2;
 			vertical-align: center;
 
+			@media @tablet {
+				padding: none;
+				height: fit-content;
+				margin: none;
+				align-items: center;
+			}
 			@media @phone {
 				flex-direction: column;
 				align-items: baseline;
 				// padding-left: 10%;
 				// margin: 0 auto;
 				// text-align: center;
+				// padding: none;
 			}
 
 			.h2 {
@@ -163,6 +170,10 @@
 				font-weight: 480;
 				height: 50%;
 				padding-left: 4%;
+
+				@media @tablet {
+					padding-left: 0;
+				}
 
 				@media @phone {
 					display: flex;
@@ -195,6 +206,10 @@
 				width: 40%;
 				height: 50%;
 				padding-left: 8%;
+
+				@media @tablet {
+					padding-left: 0;
+				}
 
 				@media @phone {
 					padding-left: 0;
@@ -234,6 +249,13 @@
 		margin: 0 auto;
 		align-items: center;
 
+		@media @tablet {
+			flex-direction: column;
+			// justify-content: center;
+			margin: 0 auto;
+			// justify-content: center;
+		}
+
 		@media @phone {
 			flex-direction: column;
 		}
@@ -241,6 +263,9 @@
 		.squareImg {
 			width: 50%;
 
+			@media @tablet {
+				width: fit-content;
+			}
 			@media @phone {
 				width: 95%;
 			}
@@ -254,14 +279,29 @@
 			display: flex;
 			flex-direction: column;
 
+			@media @tablet {
+				width: fit-content;
+				margin: 5rem auto;
+				text-align: center;
+			}
+
 			@media @phone {
 				width: 95%;
 			}
 
 			h2 {
+				@media @tablet {
+					width: fit-content;
+					margin: 0 auto;
+				}
 			}
 			p {
 				font-size: 2.5rem;
+
+				@media @tablet {
+					width: fit-content;
+					margin: 0 auto;
+				}
 			}
 		}
 	}
@@ -309,6 +349,14 @@
 		align-items: center;
 		margin: 5rem auto;
 
+		@media @tablet {
+			flex-direction: column-reverse;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			margin: 2rem auto;
+		}
+
 		@media @phone {
 			flex-direction: column-reverse;
 		}
@@ -318,27 +366,54 @@
 			flex-direction: column;
 			width: 45%;
 
+			@media @tablet {
+				width: 80%;
+				align-content: center;
+				align-items: center;
+				justify-content: center;
+				justify-items: center;
+				margin: 2rem 0;
+			}
+
 			@media @phone {
 				width: 80%;
 			}
 
 			.textHolder {
+				@media @tablet {
+					text-align: center;
+				}
 				h2 {
+					@media @tablet {
+						width: fit-content;
+						margin: 1rem auto;
+					}
 				}
 
 				p {
 					line-height: 3rem;
 					margin: 3rem 0;
 					font-size: 2.5rem;
+					@media @tablet {
+						width: fit-content;
+						margin: 2rem auto;
+					}
 				}
 			}
 
 			button {
+				@media @tablet {
+					margin-top: 3rem;
+				}
 			}
 		}
 
-		.imageHolder {
+		.imageHolderTg {
 			width: 45%;
+			@media @tablet {
+				width: fit-content;
+				margin: 0 auto;
+			}
 			@media @phone {
 				width: fit-content;
 				margin: 0 auto;
@@ -346,6 +421,11 @@
 
 			img {
 				max-width: 95%;
+				@media @tablet {
+					margin: 0 auto;
+					max-width: 100%;
+				}
+
 				@media @phone {
 					width: 100%;
 				}
@@ -355,6 +435,10 @@
 
 	.careIndex {
 		flex-direction: row-reverse;
+
+		@media @tablet {
+			flex-direction: column-reverse;
+		}
 		@media @phone {
 			flex-direction: column-reverse;
 		}

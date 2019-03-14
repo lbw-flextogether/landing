@@ -501,6 +501,14 @@ p {
   background: #002047;
   vertical-align: center;
 }
+@media (min-width: 502px) and (max-width: 999px) {
+  .body .bodyContent .textHolder2 {
+    padding: none;
+    height: fit-content;
+    margin: none;
+    align-items: center;
+  }
+}
 @media (max-width: 500px) {
   .body .bodyContent .textHolder2 {
     flex-direction: column;
@@ -512,6 +520,11 @@ p {
   font-weight: 480;
   height: 50%;
   padding-left: 4%;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .body .bodyContent .textHolder2 .h2 {
+    padding-left: 0;
+  }
 }
 @media (max-width: 500px) {
   .body .bodyContent .textHolder2 .h2 {
@@ -555,6 +568,11 @@ p {
   height: 50%;
   padding-left: 8%;
 }
+@media (min-width: 502px) and (max-width: 999px) {
+  .body .bodyContent .textHolder2 .p {
+    padding-left: 0;
+  }
+}
 @media (max-width: 500px) {
   .body .bodyContent .textHolder2 .p {
     padding-left: 0;
@@ -590,6 +608,12 @@ p {
   margin: 0 auto;
   align-items: center;
 }
+@media (min-width: 502px) and (max-width: 999px) {
+  .contentSquares .square1 {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 500px) {
   .contentSquares .square1 {
     flex-direction: column;
@@ -597,6 +621,11 @@ p {
 }
 .contentSquares .square1 .squareImg {
   width: 50%;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .contentSquares .square1 .squareImg {
+    width: fit-content;
+  }
 }
 @media (max-width: 500px) {
   .contentSquares .square1 .squareImg {
@@ -611,13 +640,32 @@ p {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 502px) and (max-width: 999px) {
+  .contentSquares .square1 .squareText {
+    width: fit-content;
+    margin: 5rem auto;
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
   .contentSquares .square1 .squareText {
     width: 95%;
   }
 }
+@media (min-width: 502px) and (max-width: 999px) {
+  .contentSquares .square1 .squareText h2 {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
 .contentSquares .square1 .squareText p {
   font-size: 2.5rem;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .contentSquares .square1 .squareText p {
+    width: fit-content;
+    margin: 0 auto;
+  }
 }
 .contentSquares .square2 {
   flex-direction: row-reverse;
@@ -658,6 +706,15 @@ p {
   align-items: center;
   margin: 5rem auto;
 }
+@media (min-width: 502px) and (max-width: 999px) {
+  .together .toghetherContent {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 2rem auto;
+  }
+}
 @media (max-width: 500px) {
   .together .toghetherContent {
     flex-direction: column-reverse;
@@ -668,9 +725,30 @@ p {
   flex-direction: column;
   width: 45%;
 }
+@media (min-width: 502px) and (max-width: 999px) {
+  .together .toghetherContent .textWBtn {
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 2rem 0;
+  }
+}
 @media (max-width: 500px) {
   .together .toghetherContent .textWBtn {
     width: 80%;
+  }
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .together .toghetherContent .textWBtn .textHolder {
+    text-align: center;
+  }
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .together .toghetherContent .textWBtn .textHolder h2 {
+    width: fit-content;
+    margin: 1rem auto;
   }
 }
 .together .toghetherContent .textWBtn .textHolder p {
@@ -678,25 +756,53 @@ p {
   margin: 3rem 0;
   font-size: 2.5rem;
 }
-.together .toghetherContent .imageHolder {
+@media (min-width: 502px) and (max-width: 999px) {
+  .together .toghetherContent .textWBtn .textHolder p {
+    width: fit-content;
+    margin: 2rem auto;
+  }
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .together .toghetherContent .textWBtn button {
+    margin-top: 3rem;
+  }
+}
+.together .toghetherContent .imageHolderTg {
   width: 45%;
 }
-@media (max-width: 500px) {
-  .together .toghetherContent .imageHolder {
+@media (min-width: 502px) and (max-width: 999px) {
+  .together .toghetherContent .imageHolderTg {
     width: fit-content;
     margin: 0 auto;
   }
 }
-.together .toghetherContent .imageHolder img {
+@media (max-width: 500px) {
+  .together .toghetherContent .imageHolderTg {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+.together .toghetherContent .imageHolderTg img {
   max-width: 95%;
 }
+@media (min-width: 502px) and (max-width: 999px) {
+  .together .toghetherContent .imageHolderTg img {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
 @media (max-width: 500px) {
-  .together .toghetherContent .imageHolder img {
+  .together .toghetherContent .imageHolderTg img {
     width: 100%;
   }
 }
 .together .careIndex {
   flex-direction: row-reverse;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .together .careIndex {
+    flex-direction: column-reverse;
+  }
 }
 @media (max-width: 500px) {
   .together .careIndex {
