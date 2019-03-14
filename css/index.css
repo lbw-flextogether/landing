@@ -145,7 +145,7 @@ h5 {
 }
 .dropdown {
   z-index: 2;
-  position: absolute;
+  position: fixed;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -360,7 +360,7 @@ body {
     background-image: url(/img/pilates2.png), url(/img/trainer2.png);
     background-position: center top 13%;
     background-repeat: no-repeat;
-    background-size: 410px, 0;
+    background-size: 0;
   }
 }
 body {
@@ -575,11 +575,11 @@ nav {
     background-image: url(/img/pilates.png), url(/img/trainer.png);
     background-position: center top 13%;
     background-repeat: no-repeat;
-    background-size: 410px, 0;
+    background-size: 0;
   }
 }
 @media (max-width: 500px) {
   nav {
-    margin-bottom: 300px;
+    margin-bottom: 50px;
   }
 }
