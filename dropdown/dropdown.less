@@ -1,51 +1,51 @@
 .dropdown {
-    z-index: 2;
-    position: fixed;
-    margin-left: 10px;
-    cursor: pointer;
-    .dropdown-button {
-      padding: 15px;
-      border: 2px solid @dark-blue;
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-      background-color: @dark-blue;
-      border-radius: 10px;
-      &:hover {
-        background-color: @light-blue;
-        border: 2px solid @light-blue;
-      }
-    }
-    .dropdown-content {
-      width: 100%;
-      position: absolute;
-      background-color: @dark-blue;
-      display: flex;
-      flex-direction: column;
-      align-items: center;  
-      margin-top: 10px;
-      border: 2.5px solid @dark-blue;
-      border-radius: 10px;
-    }
-    .dropdown-link {
-      width: 100%;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 18px;
-      text-decoration: none;
-      color: white;
-      &:hover {
-        color: @light-blue;
-        background-color: @dark-blue;
-      }
-    }
-    .dropdown-hidden {
-      display: none;
+  z-index: 2;
+  position: fixed;
+  margin-left: 10px;
+  cursor: pointer;
+  .dropdown-button {
+    padding: 15px;
+    border: 2px solid @dark-blue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: @dark-blue;
+    border-radius: 10px;
+    &:hover {
+      background-color: @light-blue;
+      border: 2px solid @light-blue;
     }
   }
+  .dropdown-content {
+    width: 100%;
+    position: absolute;
+    background-color: @dark-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    border: 2.5px solid @dark-blue;
+    border-radius: 10px;
+  }
+  .dropdown-link {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: @light-blue;
+      background-color: @dark-blue;
+    }
+  }
+  .dropdown-hidden {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .dropdown {
-    position:relative;
+    position: relative;
     margin: 10px;
 
     .dropdown-button {

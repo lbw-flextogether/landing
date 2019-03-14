@@ -130,7 +130,7 @@ table {
   box-sizing: border-box;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   margin: 0 auto;
   height: 0 auto;
@@ -140,7 +140,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #002147;
 }
 .dropdown {

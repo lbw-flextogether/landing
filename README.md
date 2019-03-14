@@ -1,4 +1,3 @@
-# landing
-project repo for the landing page
+Project repo for the landing page
 
-https://pensive-poitras-698000.netlify.com
+View here: https://pensive-poitras-698000.netlify.com
