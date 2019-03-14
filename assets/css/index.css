@@ -722,3 +722,7 @@ p {
   max-width: 80%;
   border-radius: 50%;
 }
+.contactForm {
+  border-radius: 5px;
+  padding: 20px;
+}

@@ -42,22 +42,6 @@
               </section>
           
           
-                  <div class="head"><a name="about"></a>
-                          <div class="textHolder">
-                                  <h1 >Online Excercise,</h1>
-                                      <h1 >Made Social</h1>
-                                      <p>FlexTogether provides remote low impact exercise for those with 
-                              injuries, pain, or neuromuscular disorders. The unique “buddy system” allows 
-                              you to stay connected with friends and loved ones while staying active.
-                                      </p>
-                          </div>
-                          <div class="vidHolder">
-                              <video controls>
-                                  <source src="assets/vid/flexVideo.mp4" type="video/mp4">
-                              </video>
-                 
-                  </div>
-                 </div>
 
 
 
@@ -68,7 +52,32 @@
 </div>
 
 <div class="contactForm">
-    <!-- contact form html in here -->
+  <form>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Jane">
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Doe">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Jane@Doe.com">
+
+    <label for="role">Are you a....</label>
+    <select id="role" name="role">
+      <option value="primaryUser">Primary User</option>
+      <option value="secondaryUser">Friend or Caretaker of Primary User</option>
+      <option value="institutional">Representative of an Institution or Health Provider</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Message content" style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+    
+
+
+
+
 </div>
 
 
