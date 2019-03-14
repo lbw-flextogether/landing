@@ -444,7 +444,7 @@ nav {
 @media (max-width: 1150px) {
   body {
     background-image: url(/img/pilates.png), url(/img/trainer.png);
-    background-position: top 5% right -3%, top 5% left -2%;
+    background-position: top 4% right -3%, top 4% left -2%;
     background-repeat: no-repeat;
     background-size: 350px;
   }
@@ -512,6 +512,11 @@ nav {
     background-position: top 7% right -2%, top 7% left -2%;
     background-repeat: no-repeat;
     background-size: 0;
+  }
+}
+@media (max-width: 600px) {
+  .sixExercise {
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
