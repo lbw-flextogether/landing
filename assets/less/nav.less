@@ -76,6 +76,9 @@
 				}
 			}
 			button {
+				min-width: 28%;
+				position: static;
+				margin-left: 4%;
 				@media @tablet {
 					display: none;
 				}
@@ -113,6 +116,8 @@
 	}
 	.navMap {
 		width: 100%;
+		display: flex;
+
 		.navBar {
 			width: 95%;
 			display: flex;
@@ -123,6 +128,7 @@
 			color: white;
 			padding: 1rem 0;
 			margin: 0 auto;
+			position: static;
 
 			@media @tablet {
 				align-items: center;
@@ -136,13 +142,16 @@
 			}
 
 			nav {
-				display: flex;
+				display: inline-block;
 				flex-direction: row;
 				justify-content: flex-end;
-				width: 100%;
+				width: 25%;
 				font-family: "Lato";
 				font-weight: 300;
-				margin: 0 auto;
+				margin: 0 2.5%;
+				position: static;
+				right: 55rem;
+				left: 25rem;
 
 				@media @tablet {
 					display: flex-end;
@@ -157,13 +166,29 @@
 					text-decoration: none;
 					font-size: 1.65rem;
 					color: white;
-					width: 10%;
+					min-width: 45%;
 					font-weight: 50;
+					text-align: right;
+					// left: 100%;
+					// position: static;
+					// margin: 0 2%;
 
 					@media @tablet {
 						display: none;
 					}
 				}
+				.nav2right {
+					// color: rgb(0, 255, 81);
+					// padding-right: 2%;
+					// margin-right: 5%;
+				}
+				.nav2left {
+					// color: rgb(24, 213, 255);
+					// padding-left: 7%;
+					margin-left: 8%;
+					// 	// margin-left: 2rem;
+				}
+
 				button {
 					@media @tablet {
 						display: none;

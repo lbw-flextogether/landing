@@ -311,6 +311,11 @@ p {
     display: none;
   }
 }
+.navContainer .navBar nav button {
+  min-width: 28%;
+  position: static;
+  margin-left: 4%;
+}
 @media (min-width: 502px) and (max-width: 999px) {
   .navContainer .navBar nav button {
     display: none;
@@ -343,6 +348,7 @@ p {
 }
 .navContainer .navMap {
   width: 100%;
+  display: flex;
 }
 .navContainer .navMap .navBar {
   width: 95%;
@@ -354,6 +360,7 @@ p {
   color: white;
   padding: 1rem 0;
   margin: 0 auto;
+  position: static;
 }
 @media (min-width: 502px) and (max-width: 999px) {
   .navContainer .navMap .navBar {
@@ -367,13 +374,16 @@ p {
   }
 }
 .navContainer .navMap .navBar nav {
-  display: flex;
+  display: inline-block;
   flex-direction: row;
   justify-content: flex-end;
-  width: 100%;
+  width: 25%;
   font-family: "Lato";
   font-weight: 300;
-  margin: 0 auto;
+  margin: 0 2.5%;
+  position: static;
+  right: 55rem;
+  left: 25rem;
 }
 @media (min-width: 502px) and (max-width: 999px) {
   .navContainer .navMap .navBar nav {
@@ -390,13 +400,17 @@ p {
   text-decoration: none;
   font-size: 1.65rem;
   color: white;
-  width: 10%;
+  min-width: 45%;
   font-weight: 50;
+  text-align: right;
 }
 @media (min-width: 502px) and (max-width: 999px) {
   .navContainer .navMap .navBar nav a {
     display: none;
   }
+}
+.navContainer .navMap .navBar nav .nav2left {
+  margin-left: 8%;
 }
 @media (min-width: 502px) and (max-width: 999px) {
   .navContainer .navMap .navBar nav button {
@@ -464,7 +478,7 @@ p {
 }
 .footerContainer footer .footerItems .footerBtn {
   border-radius: 10px;
-  border: 0.04rem solid #fff;
+  border: 1% solid #fff;
   color: #fff;
   overflow: hidden;
   text-align: center;
