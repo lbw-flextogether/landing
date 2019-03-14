@@ -323,7 +323,7 @@ body {
 }
 .middle-info h5 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 500;
 }
 .middle-info p {
@@ -335,6 +335,13 @@ body {
   width: 100%;
   justify-content: center;
   margin-top: 30px;
+}
+.middle-info a {
+  background: #002147;
+  padding: 7px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
 }
 @media (max-width: 500px) {
   .top-info {
@@ -353,14 +360,6 @@ body {
 @media (max-width: 500px) {
   nav {
     margin-bottom: 300px;
-  }
-}
-@media (max-width: 500px) {
-  body {
-    background-image: url(/img/pilates2.png), url(/img/trainer2.png);
-    background-position: center top 13%;
-    background-repeat: no-repeat;
-    background-size: 0;
   }
 }
 body {
@@ -420,7 +419,7 @@ nav {
 .motivate {
   width: 50%;
   border-right: solid 2px #e2dddd;
-  padding: 30px 10px 10px 10px;
+  padding: 30px 10px 20px 10px;
 }
 .motivate img {
   width: 50%;
