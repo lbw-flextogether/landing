@@ -774,6 +774,7 @@ p {
   margin: 2rem 0;
 }
 input[type="text"],
+input[type="email"],
 select,
 textarea {
   width: 100%;
