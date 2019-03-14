@@ -722,7 +722,18 @@ p {
   max-width: 80%;
   border-radius: 50%;
 }
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid red;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  margin: 0.6rem auto 1.6rem auto;
+  resize: vertical;
+}
 .contactForm {
   border-radius: 5px;
-  padding: 20px;
+  padding: 2rem;
 }
