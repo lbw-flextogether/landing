@@ -188,6 +188,7 @@
 					width: 80%;
 					display: flex;
 					align-items: center;
+					text-align: center;
 					padding-top: 8%;
 					margin: 0 auto;
 				}
@@ -295,10 +296,18 @@
 		align-items: center;
 		margin: 5rem auto;
 
+		@media @phone {
+			flex-direction: column-reverse;
+		}
+
 		.textWBtn {
 			display: flex;
 			flex-direction: column;
 			width: 45%;
+
+			@media @phone {
+				width: 80%;
+			}
 
 			.textHolder {
 				h2 {
@@ -317,15 +326,25 @@
 
 		.imageHolder {
 			width: 45%;
+			@media @phone {
+				width: fit-content;
+				margin: 0 auto;
+			}
 
 			img {
 				max-width: 95%;
+				@media @phone {
+					width: 100%;
+				}
 			}
 		}
 	}
 
 	.careIndex {
 		flex-direction: row-reverse;
+		@media @phone {
+			flex-direction: column-reverse;
+		}
 	}
 
 	.partnerIndex {

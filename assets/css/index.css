@@ -513,6 +513,7 @@ p {
     width: 80%;
     display: flex;
     align-items: center;
+    text-align: center;
     padding-top: 8%;
     margin: 0 auto;
   }
@@ -609,10 +610,20 @@ p {
   align-items: center;
   margin: 5rem auto;
 }
+@media (max-width: 500px) {
+  .together .toghetherContent {
+    flex-direction: column-reverse;
+  }
+}
 .together .toghetherContent .textWBtn {
   display: flex;
   flex-direction: column;
   width: 45%;
+}
+@media (max-width: 500px) {
+  .together .toghetherContent .textWBtn {
+    width: 80%;
+  }
 }
 .together .toghetherContent .textWBtn .textHolder p {
   line-height: 3rem;
@@ -622,11 +633,27 @@ p {
 .together .toghetherContent .imageHolder {
   width: 45%;
 }
+@media (max-width: 500px) {
+  .together .toghetherContent .imageHolder {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
 .together .toghetherContent .imageHolder img {
   max-width: 95%;
 }
+@media (max-width: 500px) {
+  .together .toghetherContent .imageHolder img {
+    width: 100%;
+  }
+}
 .together .careIndex {
   flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .together .careIndex {
+    flex-direction: column-reverse;
+  }
 }
 .head2 {
   display: flex;
