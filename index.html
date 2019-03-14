@@ -1,202 +1,182 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>FlexTogether</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="./components/Buttons.js" defer></script>
-    <script src="./components/StickyNav.js" defer></script>
-    <script src="./components/Menu.js" defer></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    
-  </head>
-  <body>
+	<head>
+		<title>FlexTogether</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="./components/Buttons.js" defer></script>
+		<script src="./components/StickyNav.js" defer></script>
+		<script src="./components/Menu.js" defer></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<section class="navContainer">
+				<div class="navBar">
+					<div class="navLogo">
+						<h2>FlexTogether</h2>
+					</div>
+					<nav>
+						<a href="#" class="home">HOME</a>
+						<a href="#about" class="noBar">ABOUT</a>
+						<a href="#features" class="noBar">FEATURES</a>
+						<a href="#together" class="noBar">TOGETHER</a>
+						<button class="navBtn react">Sign Up</button>
+					</nav>
 
-    <div class="container">
-            
+					<nav class="mobile">
+						<img class="slideBtn" src="./assets/img/menu.png" />
+						<div class="slideContent slideHidden">
+							<a href="#" class="slideLink">HOME</a>
+							<a href="#about" class="slideLink">ABOUT</a>
+							<a href="#features" class="slideLink">FEATURES</a>
+							<a href="#together" class="slideLink">TOGETHER</a>
+						</div>
+					</nav>
+				</div>
+			</section>
 
+			<div class="head">
+				<a name="about"></a>
+				<div class="textHolder">
+					<h1>Online Excercise,</h1>
+					<h1>Made Social</h1>
+					<p>
+						FlexTogether provides remote low impact exercise for those with
+						injuries, pain, or neuromuscular disorders. The unique “buddy
+						system” allows you to stay connected with friends and loved ones
+						while staying active.
+					</p>
+				</div>
+				<div class="vidHolder">
+					<video controls>
+						<source src="assets/vid/flexVideo.mp4" type="video/mp4" />
+					</video>
+				</div>
+			</div>
 
-    <section class="navContainer">
-      <div class="navBar">
-        <div class="navLogo">
-          <h2>FlexTogether</h2>
-        </div>
-        <nav>
-          <a href="#" class="home">HOME</a>
-          <a href="#about" class="noBar">ABOUT</a>
-          <a href="#features" class="noBar">FEATURES</a>
-          <a href="#together" class="noBar">TOGETHER</a>
-          <button class="navBtn react">Sign Up</button>
-        </nav>
-      
-      <nav class="mobile">
-            <img class="slideBtn" src="./assets/img/menu.png">
-            <div class="slideContent slideHidden">
-                        <a href="#" class="slideLink">HOME</a>
-                        <a href="#about" class="slideLink">ABOUT</a>
-                        <a href="#features" class="slideLink">FEATURES</a>
-                        <a href="#together" class="slideLink">TOGETHER</a>
-            </div>
-        </div>
-    </section>
+			<section class="body">
+				<div class="bodyContent content">
+					<div class="faces">
+						<img class="face" src="./assets/img/y1.png" alt="" />
+						<img class="face" src="./assets/img/e1.png" alt="" />
+						<img class="face" src="./assets/img/y2.png" alt="" />
+						<img class="face" src="./assets/img/e2.png" alt="" />
+						<img class="face" src="./assets/img/y3.png" alt="" />
+						<img class="face" src="./assets/img/e3.png" alt="" />
+						<img class="face" src="./assets/img/y4.png" alt="" />
+						<img class="face" src="./assets/img/e4.png" alt="" />
+					</div>
+					<div class="textHolder">
+						<h2>Flex with a community member, friend, or loved one</h2>
+					</div>
+					<div class="textHolder2">
+						<div class="h2">
+							<h2>Get Motivated,</h2>
+							<h2>Have Fun</h2>
+							<button>Join</button>
+						</div>
+						<div class="p">
+							<p>
+								With FlexTogether’s Buddy System you can invite multiple family
+								and friends to move with you. With our innovative scheduler, you
+								can find an option that works for both of you!
+							</p>
+						</div>
+					</div>
+				</div>
+				<a name="features"></a>
+				<div class="contentSquares">
+					<div class="square1">
+						<div class="squareImg">
+							<img src="./assets/img/tiles.png" alt="" class="squarePic" />
+						</div>
 
+						<div class="squareText">
+							<h2>Personalized & Impactful:</h2>
+							<h2>Choose your favorite routine</h2>
+							<p>
+								FlexTogether features a broad range of popular fitness programs
+								customized to your skill level. There are also targeted programs
+								for disease management such as Parkinson’s, arthritis, and
+								chronic pain.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="contentSquares">
+					<div class="square2">
+						<div class="squareImg">
+							<img src="./assets/img/devices.png" alt="" class="squarePic" />
+						</div>
 
-        <div class="head"><a name="about"></a>
-                <div class="textHolder">
-                        <h1 >Online Excercise,</h1>
-                            <h1 >Made Social</h1>
-                            <p>FlexTogether provides remote low impact exercise for those with 
-                    injuries, pain, or neuromuscular disorders. The unique “buddy system” allows 
-                    you to stay connected with friends and loved ones while staying active.
-                            </p>
-                </div>
-                <div class="vidHolder">
-                    <video controls>
-                        <source src="assets/vid/flexVideo.mp4" type="video/mp4">
-                    </video>
-       
-        </div>
-       </div>
-       
-       <section class="body" >
-           
-        <div class="bodyContent content" >
-            <div class="faces">
-                <img class="face" src="./assets/img/y1.png" alt="">
-                <img class="face" src="./assets/img/e1.png" alt="">
-                <img class="face" src="./assets/img/y2.png" alt="">
-                <img class="face" src="./assets/img/e2.png" alt="">
-                <img class="face" src="./assets/img/y3.png" alt="">
-                <img class="face" src="./assets/img/e3.png" alt="">
-                <img class="face" src="./assets/img/y4.png" alt="">
-                <img class="face" src="./assets/img/e4.png" alt="">
-            </div>
-            <div class="textHolder">
-            <h2>Flex with a community member, friend, or loved one</h2>
-        </div>
-        <div class="textHolder2">
-            <div class="h2">
-                <h2>Get Motivated,</h2>
-                <h2>Have Fun</h2>
-                <button>Join</button>
-            </div>
-            <div class="p">
-                <p>
-                        With FlexTogether’s Buddy System you can invite multiple 
-                        family and friends to move with you. 
-                        With our innovative scheduler, you can find an option 
-                        that works for both of you!
-                </p>
-            </div>
-            </div>
-        </div>
-<a name="features"></a>
-        <div class="contentSquares">
-            <div class="square1">
-                <div class="squareImg">
-                    <img src="./assets/img/tiles.png" alt="" class="squarePic">
-                </div>
+						<div class="squareText">
+							<h2>Convenient & Simple:</h2>
+							<h2>Accessible anywhere you like</h2>
+							<p>
+								An online platform that you can access from the comfort of your
+								home, in the office, or on-the-go.
+							</p>
+							<a name="together"></a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                <div class="squareText">
-                    <h2>Personalized & Impactful:</h2>
-                    <h2>Choose your favorite routine</h2>
-                    <p>FlexTogether features a broad range of popular fitness 
-                        programs customized
-                         to your skill level. There are also targeted programs 
-                         for disease management 
-                         such as Parkinson’s, arthritis, and chronic pain.</p>
+			<section class="together">
+				<div class="toghetherContent careIndex">
+					<div class="textWBtn">
+						<div class="textHolder">
+							<h2>A New Way to Provide Support</h2>
+							<p>
+								Working out is always better with a friend! With FlexTogether
+								you can offer your support and be a motivational partner for
+								your friend or loved one!
+							</p>
+						</div>
+						<button onclick="window.open(`./industry.html`)">
+							Motivate Someone
+						</button>
+					</div>
 
-                </div>
-            </div>
+					<div class="imageHolder">
+						<img src="./assets/img/careIndex.jpeg" alt="" />
+					</div>
+				</div>
 
+				<div class="toghetherContent partnerIndex">
+					<div class="textWBtn">
+						<div class="textHolder">
+							<h2>A New Way to Incentivize a Healthy Lifestyle</h2>
+							<p>
+								Wish your patients would stay active after they left the office?
+								With FlexTogether you can compliment your care plan with
+								exercise!
+							</p>
+						</div>
+						<button onclick="window.open(`./industry.html#professionals`)">
+							Partner Up
+						</button>
+					</div>
 
+					<div class="imageHolder">
+						<img src="./assets/img/partnerIndex.jpeg" alt="" />
+					</div>
+				</div>
+			</section>
 
-        </div>
-        <div class="contentSquares">
-                <div class="square2">
-                    <div class="squareImg">
-                        <img src="./assets/img/devices.png" alt="" class="squarePic">
-                    </div>
-    
-                    <div class="squareText">
-                        <h2>Convenient & Simple:</h2>
-                        <h2>Accessible anywhere you like</h2>
-                        <p>An online platform that you can access 
-                            from the comfort of your home, 
-                            in the office, or on-the-go.</p>
-                            <a name="together"></a>
-                    </div>
-                </div>
-    
-    
-    
-            </div>
+			<section class="footerContainer">
+				<footer>
+					<h2>FlexTogether</h2>
+					<button class="footerBt react">SIGN UP</button>
 
-            
-       </section>
-
-
-       <section class="together">
-
-
-            <div class="toghetherContent careIndex">
-                <div class="textWBtn">
-                    <div class="textHolder">
-                        <h2>A New Way to Provide Support</h2>
-                        <p>Working out is always better with a friend! With 
-                            FlexTogether you can offer your support and be a motivational 
-                            partner for your friend or loved one!</p>
-                            </div>
-                            <button onclick="window.open(`./industry.html`)">Motivate Someone</button>
-                        </div>
-        
-                            <div class="imageHolder">
-                                <img src="./assets/img/careIndex.jpeg" alt="">
-        
-                            </div>
-
-                        </div> 
-
-
-           <div class="toghetherContent partnerIndex">
-                <div class="textWBtn">
-            <div class="textHolder">
-                <h2>A New Way to Incentivize a Healthy Lifestyle</h2>
-                <p>Wish your patients would stay active after they left the office? 
-                    With FlexTogether you can compliment 
-                    your care plan with exercise!</p>
-                    </div>
-                    <button onclick="window.open(`./industry.html#professionals`)">Partner Up</button>
-                </div>
-
-                    <div class="imageHolder">
-                        <img src="./assets/img/partnerIndex.jpeg" alt="">
-
-                    </div>
-                </div> 
-
-                
-       </section>
-
-
-
-<section class="footerContainer">
-
-<footer>
-    <h2>FlexTogether</h2>
-    <button class="footerBt react">SIGN UP</button>
-
-    <button class="home">TOP</button>
-</footer>
-</section>
-
-   
-</div>
-
-
-  </body>
+					<button class="home">TOP</button>
+				</footer>
+			</section>
+		</div>
+	</body>
 </html>

@@ -1,159 +1,133 @@
 .head2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
-    width: 100%;
-    background: @flexgray;
-    margin: 0 0 4rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+	width: 100%;
+	background: @flexgray;
+	margin: 0 0 4rem 0;
 
-    @media @phone {
-        padding: 2.5rem 0 4rem 0;
-    }
+	@media @phone {
+		padding: 2.5rem 0 4rem 0;
+	}
 
-        .textHolder {
-            max-width: 80%;
-            margin: 2rem auto;
-            text-align: center;
+	.textHolder {
+		max-width: 80%;
+		margin: 2rem auto;
+		text-align: center;
+	}
 
+	.imgHolder {
+		max-width: 100%;
 
-        }
+		@media @phone {
+			max-width: 100%;
+		}
 
-    .imgHolder {
-        max-width: 100%;
+		img {
+			max-width: 100%;
+		}
+	}
 
-        @media @phone {
-            max-width: 100%;
-        }
+	.headInfo {
+		max-width: 80%;
+		margin: 2rem auto;
+		text-align: center;
 
-        img {
-            max-width: 100%;
+		h2 {
+			font-weight: 600;
+		}
+		p {
+			margin-top: 2rem;
+			line-height: 3rem;
+			font-size: 2.3rem;
+			color: black;
+			font-weight: 300;
+		}
+	}
+}
 
+.main {
+	display: flex;
+	flex-direction: column;
 
-        }
-    }
+	.imgHolder {
+		max-width: 100%;
+		// margin: 0 2rem;
 
-    .headInfo {
-        max-width: 80%;
-                margin: 2rem auto;
-                text-align: center;
+		@media @phone {
+			max-width: 100%;
+			margin: 0 1rem 2rem 1rem;
+		}
 
-                h2 {
-                    font-weight: 600;
+		img {
+			max-width: 100%;
+		}
+	}
 
-                }
-                p {
-                    margin-top: 2rem;
-                    line-height: 3rem;
-                    font-size: 2.3rem;
-                    color: black;
-                    font-weight: 300;
-                }
-    }
-    
-    }
+	.textContent {
+		max-width: 80%;
+		margin: 3rem auto;
+		text-align: center;
 
+		h2 {
+			font-weight: 600;
+		}
+		p {
+			margin-top: 2rem;
+			line-height: 3rem;
+			font-size: 2.3rem;
+			color: black;
+			font-weight: 300;
+		}
+		button {
+		}
+	}
+}
 
+.contentIndustry {
+	display: flex;
+	flex-direction: row;
+	max-width: 80%;
+	margin: 0 auto;
+	justify-content: space-between;
+	padding: 5rem 0;
+	align-items: center;
 
+	.textHolder {
+		max-width: 40%;
+		display: flex;
+		flex-direction: column;
 
+		h3 {
+			margin: 2rem auto;
+			font-weight: 650;
+		}
+		.contentHold {
+			margin: 1rem 0 1rem 3rem;
+			h4 {
+				margin: 0.8rem auto;
+				font-size: 2.3rem;
+				font-weight: 550;
+			}
+			p {
+				font-size: 1.6rem;
+				line-height: 1.4;
+			}
+		}
+	}
+	.imageHolder {
+		max-width: 40%;
+		img {
+			max-width: 80%;
+			border-radius: 50%;
+		}
+	}
+}
+// }
 
-        .main {
-            display: flex;
-            flex-direction: column;
-
-            .imgHolder {
-                max-width: 100%;
-                // margin: 0 2rem;
-        
-                @media @phone {
-                    max-width: 100%;
-                    margin: 0 1rem 2rem 1rem;
-                }
-        
-                img {
-                    max-width: 100%;
-        
-        
-                }
-            }
-
-            .textContent {
-                max-width: 80%;
-                margin: 3rem auto;
-                text-align: center;
-
-                h2 {
-                    font-weight: 600;
-
-                }
-                p {
-                    margin-top: 2rem;
-                    line-height: 3rem;
-                    font-size: 2.3rem;
-                    color: black;
-                    font-weight: 300;
-                }
-                button {
-
-                }
-            }
-            
-        }
-
-        .contentIndustry {
-            display: flex;
-            flex-direction: row;
-            max-width: 80%;
-            margin: 0 auto;
-            justify-content: space-between;
-            padding: 5rem 0;
-            align-items: center;
-
-
-            .textHolder {
-                max-width: 40%;
-                display: flex;
-                flex-direction: column;
-
-                h3 {
-                    margin: 2rem auto;
-                    font-weight: 650;
-
-                }
-                .contentHold {
-                    margin: 1rem 0 1rem 3rem;
-                    h4 {
-                        margin: .8rem auto;
-                        font-size: 2.3rem;
-                        font-weight: 550;
-
-                    }
-                    p {
-                        font-size: 1.6rem;
-                        line-height: 1.4;
-
-                    }
-                }
-            }
-            .imageHolder {
-                max-width: 40%;
-                img {
-                    max-width: 80%;
-                    border-radius: 50%;
-
-                }
-            }
-
-
-        }
-    // }
-
-
-    .partners {
-        // width: 300rem;
-        // height: 300rem;
-    }
-
-
-    
+.partners {
+	// width: 300rem;
+	// height: 300rem;
+}

@@ -1,144 +1,123 @@
 .navContainer {
-  background: @flexdarkblue;
-  padding: 1rem 0;
-  overflow: hidden;
-  z-index: 1;
+	background: @flexdarkblue;
+	padding: 1rem 0;
+	overflow: hidden;
+	z-index: 1;
 
-  .navBar {
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    color: white;
-    padding: 1rem 0;
-    margin: 0 auto;
+	.navBar {
+		width: 95%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+		color: white;
+		padding: 1rem 0;
+		margin: 0 auto;
 
-    @media @phone {
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-    }
+		@media @phone {
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+		}
 
-    .navLogo {
-      font-size: 3rem;
-      width: 50%;
+		.navLogo {
+			font-size: 3rem;
+			width: 50%;
 
-      @media @phone {
-        width: fit-content;
-        // position: absolute;
-      }
-      h2 {
-        font-family: "Lato";
-        font-weight: 330;
-      }
-    }
+			@media @phone {
+				width: fit-content;
+				// position: absolute;
+			}
+			h2 {
+				font-family: "Lato";
+				font-weight: 330;
+			}
+		}
 
-    nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: baseline;
-      width: 50%;
-      font-family: "Lato";
-      font-weight: 300;
+		nav {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: baseline;
+			width: 50%;
+			font-family: "Lato";
+			font-weight: 300;
 
-      @media @phone {
-        display: none;
-      }
+			@media @phone {
+				display: none;
+			}
 
-      a {
-        text-decoration: none;
-        font-size: 2rem;
-        color: white;
-      }
-      button {
-        font-size: 2rem;
-        .tbBtn();
-      }
+			a {
+				text-decoration: none;
+				font-size: 2rem;
+				color: white;
+			}
+			button {
+				font-size: 2rem;
+				.tbBtn();
+			}
 
-      .activeNav {
-        background: white;
-      }
-    }
+			.activeNav {
+				background: white;
+			}
+		}
 
+		.mobile {
+			display: none;
 
+			@media @phone {
+				display: flex;
+				justify-content: flex-end;
+				width: 20%;
+				z-index: 2;
 
+				.slideBtn {
+					// position: fixed;
+					// z-index: auto;
+					width: fit-content;
+					// float: right;
+				}
 
+				.slideContent {
+					// display: flex;
+					// flex-direction: column;
+					// background-color: lavender;
+					width: 100%;
+					position: absolute;
+					background-color: white;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin-top: 10px;
+					border: 2.5px solid red;
+					margin: 10rem 0;
+				}
 
- 
-.mobile {
-  display: none;
-
-  @media @phone {
-    display: flex;
-    justify-content: flex-end;
-    width: 20%;
-    z-index: 2;
-
-    .slideBtn {
-      // position: fixed;
-      // z-index: auto;
-      width: fit-content;
-      // float: right;
-
-    }
-  
-  .slideContent{
-    // display: flex;
-    // flex-direction: column;
-    // background-color: lavender;
-    width: 100%;
-    position: absolute;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    margin-top: 10px;
-    border: 2.5px solid red;
-    margin: 10rem 0;
-  }
-
-  .slideLink {
-
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 18px;
-    text-decoration: none;
-    color: red;
-    &:hover {
-      color: white;
-      background-color: red;
-
-
-  }
-
-
-
-}
-.slideHidden{
-  display: none;
-}
-
-
-}
-  }
-}
-
+				.slideLink {
+					width: 100%;
+					text-align: center;
+					padding: 15px 0;
+					font-size: 18px;
+					text-decoration: none;
+					color: red;
+					&:hover {
+						color: white;
+						background-color: red;
+					}
+				}
+				.slideHidden {
+					display: none;
+				}
+			}
+		}
+	}
 }
 @media (min-height: 500px) {
-
-.sticky {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  width: 100%;
-  opacity: .95;
-  
+	.sticky {
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+		width: 100%;
+		opacity: 0.95;
+	}
 }
-}
-
-
-
-

@@ -1,97 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>FlexTogether</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="./components/Buttons.js" defer></script>
-    <script src="./components/StickyNav.js" defer></script>
-    <script src="./components/Menu.js" defer></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    
-  </head>
-  <body>
+	<head>
+		<title>FlexTogether - Contact</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="./components/Buttons.js" defer></script>
+		<script src="./components/StickyNav.js" defer></script>
+		<script src="./components/Menu.js" defer></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/index.css" />
+	</head>
+	<body>
+		<div class="container contact">
+			<section class="navContainer">
+				<div class="navBar">
+					<div class="navLogo">
+						<h2>FlexTogether</h2>
+					</div>
+					<nav>
+						<a href="#" class="home">HOME</a>
+						<a href="#about" class="noBar">ABOUT</a>
+						<a href="#features" class="noBar">FEATURES</a>
+						<a href="#together" class="noBar">TOGETHER</a>
+						<button class="navBtn react">Sign Up</button>
+					</nav>
 
-        <div class="containerContact">
-            <section class="navContainer">
-                <div class="navBar">
-                  <div class="navLogo">
-                    <h2>FlexTogether</h2>
-                  </div>
-                  <nav>
-                    <a href="#" class="home">HOME</a>
-                    <a href="#about" class="noBar">ABOUT</a>
-                    <a href="#features" class="noBar">FEATURES</a>
-                    <a href="#together" class="noBar">TOGETHER</a>
-                    <button class="navBtn react">Sign Up</button>
-                  </nav>
-                
-                <nav class="mobile">
-                      <img class="slideBtn" src="./assets/img/menu.png">
-                      <div class="slideContent slideHidden">
-                                  <a href="#" class="slideLink">HOME</a>
-                                  <a href="#about" class="slideLink">ABOUT</a>
-                                  <a href="#features" class="slideLink">FEATURES</a>
-                                  <a href="#together" class="slideLink">TOGETHER</a>
-                      </div>
-                  </div>
-              </section>
-          
-          
+					<nav class="mobile">
+						<img class="slideBtn" src="./assets/img/menu.png" />
+						<div class="slideContent slideHidden">
+							<a href="#" class="slideLink">HOME</a>
+							<a href="#about" class="slideLink">ABOUT</a>
+							<a href="#features" class="slideLink">FEATURES</a>
+							<a href="#together" class="slideLink">TOGETHER</a>
+						</div>
+					</nav>
+				</div>
+			</section>
 
+			<div class="contactHeading">
+				<h1>Contact Us</h1>
+				<p>Use this form to contact us</p>
+			</div>
 
+			<div class="contactForm">
+				<form>
+					<label for="firstName">First Name</label>
+					<input
+						type="text"
+						id="firstName"
+						name="firstName"
+						placeholder="Jane"
+					/>
 
+					<label for="lastName">Last Name</label>
+					<input type="text" id="lastName" name="lastName" placeholder="Doe" />
 
-<div class="heading">
-    <h1>Contact Us</h1>
-    <p>Use this form to contact us</p>
-</div>
+					<label for="email">Email</label>
+					<input
+						type="text"
+						id="email"
+						name="email"
+						placeholder="Jane@Doe.com"
+					/>
 
-<div class="contactForm">
-  <form>
-    <label for="firstName">First Name</label>
-    <input type="text" id="firstName" name="firstName" placeholder="Jane">
+					<label for="role">Are you a....</label>
+					<select id="role" name="role">
+						<option value="primaryUser">Primary User</option>
+						<option value="secondaryUser"
+							>Friend or Caretaker of Primary User</option
+						>
+						<option value="institutional"
+							>Representative of an Institution or Health Provider</option
+						>
+					</select>
 
-    <label for="lastName">Last Name</label>
-    <input type="text" id="lastName" name="lastName" placeholder="Doe">
+					<label for="message">Message</label>
+					<textarea
+						id="message"
+						name="message"
+						placeholder="Message content"
+						style="height:200px"
+					></textarea>
+					<input type="submit" value="submit" />
+				</form>
+			</div>
 
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Jane@Doe.com">
-
-    <label for="role">Are you a....</label>
-    <select id="role" name="role">
-      <option value="primaryUser">Primary User</option>
-      <option value="secondaryUser">Friend or Caretaker of Primary User</option>
-      <option value="institutional">Representative of an Institution or Health Provider</option>
-    </select>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Message content" style="height:200px"></textarea>
-    <input type="submit" value="submit">
-  </form>
-    
-
-
-
-
-</div>
-
-
-<section class="footerContainer">
-    <footer>
-         <h2>FlexTogether</h2>
-         <button class="footerBt react">SIGN UP</button>
-         <button class="home">TOP</button>
-     </footer>
- </section>
-
-
-            </div>
-
-
-        </body>
-      </html>
+			<section class="footerContainer">
+				<footer>
+					<h2>FlexTogether</h2>
+					<button class="footerBt react">SIGN UP</button>
+					<button class="home">TOP</button>
+				</footer>
+			</section>
+		</div>
+	</body>
+</html>
