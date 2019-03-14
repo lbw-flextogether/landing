@@ -208,12 +208,23 @@
 						width: fit-content;
 						padding-left: 0;
 						width: 80%;
-						height: 100%;
+						// height: 100%;
 						margin: 0 auto;
+						// flex-wrap: wrap;
 					}
 
-					h2:first-child {
+					h2 {
 						color: @flexlightblue;
+						@media @tablet {
+							width: 100%;
+							text-align: center;
+						}
+
+						@media @phone {
+							line-height: 5rem;
+							flex-wrap: nowrap;
+							text-align: center;
+						}
 					}
 					h2:last-of-type {
 						color: white;
@@ -417,6 +428,7 @@
 			@media @phone {
 				width: 80%;
 				text-align: center;
+				margin: 2rem 0;
 			}
 
 			.textHolder {

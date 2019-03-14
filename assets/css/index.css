@@ -565,12 +565,24 @@ p {
     width: fit-content;
     padding-left: 0;
     width: 80%;
-    height: 100%;
     margin: 0 auto;
   }
 }
-.body .bodyContent .mainHolder .textHolder2 .h2 h2:first-child {
+.body .bodyContent .mainHolder .textHolder2 .h2 h2 {
   color: #279ccf;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .body .bodyContent .mainHolder .textHolder2 .h2 h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .body .bodyContent .mainHolder .textHolder2 .h2 h2 {
+    line-height: 5rem;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
 }
 .body .bodyContent .mainHolder .textHolder2 .h2 h2:last-of-type {
   color: white;
@@ -778,6 +790,7 @@ p {
   .together .toghetherContent .textWBtn {
     width: 80%;
     text-align: center;
+    margin: 2rem 0;
   }
 }
 .together .toghetherContent .textWBtn .textHolder {
