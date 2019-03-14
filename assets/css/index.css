@@ -168,6 +168,52 @@ h5 {
 p {
   font-size: 1.6rem;
 }
+.btn {
+  border: none;
+  font-family: "lato";
+  font-size: "inherit";
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 12.5px 40px;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn:after {
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-signUp {
+  border-radius: 50px;
+  border: 3px solid #fff;
+  color: #fff;
+  overflow: hidden;
+  font-size: 1.4rem;
+}
+.btn-signUp:hover {
+  background: #279ccf;
+  color: #002147;
+}
+.btn-partnerPage {
+  border-radius: 50px;
+  border: 3px solid #002147;
+  color: #279ccf;
+  overflow: hidden;
+  font-size: 1.4rem;
+}
+.btn-partnerPage:hover {
+  background: #279ccf;
+  color: #002147;
+}
 .navContainer {
   background: #002147;
   padding: 1rem 0;
@@ -245,24 +291,6 @@ p {
     display: none;
   }
 }
-.navContainer .navBar nav button {
-  font-size: 2rem;
-  text-align: center;
-  background: #279ccf;
-  color: white;
-  border: none;
-  border-radius: 5%;
-  padding: 1.1rem 1rem;
-  margin: 0;
-}
-.navContainer .navBar nav button:hover {
-  color: white;
-}
-@media (min-width: 502px) and (max-width: 999px) {
-  .navContainer .navBar nav button {
-    display: none;
-  }
-}
 .navContainer .navBar nav .activeNav {
   background: white;
 }
@@ -336,31 +364,13 @@ p {
 }
 .footerContainer footer {
   width: 95%;
-  background: #002147;
-  margin: inherit;
-  height: 10rem;
-  color: white;
+  margin: 0 auto;
+}
+.footerContainer footer .footerItems {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.footerContainer footer h2 {
-  font-family: "Lato";
-  font-weight: 330;
-}
-.footerContainer footer button {
-  font-size: 2rem;
-  text-align: center;
-  background: #279ccf;
-  color: white;
-  border: none;
-  border-radius: 5%;
-  padding: 1.1rem 1rem;
-  margin: 0;
-}
-.footerContainer footer button:hover {
-  color: white;
+  justify-content: space-evenly;
+  padding: 2rem 0;
 }
 .container {
   background: white;
@@ -510,19 +520,7 @@ p {
   }
 }
 .body .bodyContent .mainHolder button {
-  width: 20rem;
-  font-size: 2rem;
-  text-align: center;
-  background: #279ccf;
-  color: white;
-  border: none;
-  border-radius: 5%;
-  padding: 2rem;
-  margin: 0;
   margin-top: 2.3rem;
-}
-.body .bodyContent .mainHolder button:hover {
-  color: white;
 }
 .body .bodyContent .mainHolder .textHolder2 {
   display: flex;
@@ -841,33 +839,6 @@ p {
     text-align: center;
   }
 }
-.together .toghetherContent .textWBtn button {
-  font-size: 2rem;
-  background: #279ccf;
-  color: white;
-  border: none;
-  border-radius: 5%;
-  padding: 2rem;
-  margin: 0;
-  width: 25rem;
-  margin: 0 auto;
-  text-align: center;
-}
-.together .toghetherContent .textWBtn button:hover {
-  color: white;
-}
-@media (min-width: 502px) and (max-width: 999px) {
-  .together .toghetherContent .textWBtn button {
-    margin-top: 3rem;
-  }
-}
-@media (max-width: 500px) {
-  .together .toghetherContent .textWBtn button {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .together .toghetherContent .imageHolderTg {
   width: 45%;
 }
@@ -989,13 +960,16 @@ p {
   color: black;
   font-weight: 300;
 }
+.main .textContent button {
+  margin: 2rem 0;
+}
 .contentIndustry {
   display: flex;
   flex-direction: row;
   max-width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   justify-content: space-between;
-  padding: 5rem 0;
+  padding: 2rem 0;
   align-items: center;
 }
 @media (max-width: 500px) {
