@@ -345,8 +345,6 @@ p {
 @media (max-width: 500px) {
   .container .head {
     flex-direction: column-reverse;
-    background: yellow;
-    color: yellow;
     padding: 2.5rem 0 4rem 0;
   }
 }
