@@ -490,11 +490,11 @@ p {
   text-align: center;
   margin-top: 3rem;
 }
-.body .bodyContent .textHolder2 {
+.body .bodyContent .mainHolder {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: space-evenly;
+  align-items: center;
   margin: 8rem auto;
   width: 100%;
   padding: 4rem 0;
@@ -502,32 +502,63 @@ p {
   vertical-align: center;
 }
 @media (min-width: 502px) and (max-width: 999px) {
-  .body .bodyContent .textHolder2 {
-    padding: none;
+  .body .bodyContent .mainHolder {
+    padding: 2rem 0;
     height: fit-content;
-    margin: none;
+    margin: 7rem auto;
     align-items: center;
   }
 }
+.body .bodyContent .mainHolder button {
+  width: 20rem;
+  font-size: 2rem;
+  text-align: center;
+  background: #279ccf;
+  color: white;
+  border: none;
+  border-radius: 5%;
+  padding: 2rem;
+  margin: 0;
+  margin-top: 2.3rem;
+}
+.body .bodyContent .mainHolder button:hover {
+  color: white;
+}
+.body .bodyContent .mainHolder .textHolder2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .body .bodyContent .mainHolder .textHolder2 {
+    padding: 2rem 0;
+    margin: 1rem auto;
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
-  .body .bodyContent .textHolder2 {
+  .body .bodyContent .mainHolder .textHolder2 {
     flex-direction: column;
     align-items: baseline;
   }
 }
-.body .bodyContent .textHolder2 .h2 {
+.body .bodyContent .mainHolder .textHolder2 .h2 {
   width: 40%;
   font-weight: 480;
   height: 50%;
   padding-left: 4%;
 }
 @media (min-width: 502px) and (max-width: 999px) {
-  .body .bodyContent .textHolder2 .h2 {
+  .body .bodyContent .mainHolder .textHolder2 .h2 {
     padding-left: 0;
+    width: 40%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
-  .body .bodyContent .textHolder2 .h2 {
+  .body .bodyContent .mainHolder .textHolder2 .h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -538,43 +569,37 @@ p {
     margin: 0 auto;
   }
 }
-.body .bodyContent .textHolder2 .h2 h2:first-child {
+.body .bodyContent .mainHolder .textHolder2 .h2 h2:first-child {
   color: #279ccf;
 }
-.body .bodyContent .textHolder2 .h2 h2:last-of-type {
+.body .bodyContent .mainHolder .textHolder2 .h2 h2:last-of-type {
   color: white;
   line-height: 15rem;
 }
+@media (min-width: 502px) and (max-width: 999px) {
+  .body .bodyContent .mainHolder .textHolder2 .h2 h2:last-of-type {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
-  .body .bodyContent .textHolder2 .h2 h2:last-of-type {
+  .body .bodyContent .mainHolder .textHolder2 .h2 h2:last-of-type {
     line-height: 5rem;
   }
 }
-.body .bodyContent .textHolder2 .h2 button {
-  font-size: 2rem;
-  text-align: center;
-  background: #279ccf;
-  color: white;
-  border: none;
-  border-radius: 5%;
-  padding: 2rem;
-  margin: 0;
-}
-.body .bodyContent .textHolder2 .h2 button:hover {
-  color: white;
-}
-.body .bodyContent .textHolder2 .p {
+.body .bodyContent .mainHolder .textHolder2 .p {
   width: 40%;
   height: 50%;
   padding-left: 8%;
 }
 @media (min-width: 502px) and (max-width: 999px) {
-  .body .bodyContent .textHolder2 .p {
+  .body .bodyContent .mainHolder .textHolder2 .p {
     padding-left: 0;
+    width: 40%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
-  .body .bodyContent .textHolder2 .p {
+  .body .bodyContent .mainHolder .textHolder2 .p {
     padding-left: 0;
     width: 80%;
     display: flex;
@@ -584,7 +609,7 @@ p {
     margin: 0 auto;
   }
 }
-.body .bodyContent .textHolder2 .p p {
+.body .bodyContent .mainHolder .textHolder2 .p p {
   font-size: 2.6rem;
   line-height: 4rem;
   font-weight: 300;
@@ -592,7 +617,7 @@ p {
   width: 100%;
 }
 @media (max-width: 500px) {
-  .body .bodyContent .textHolder2 .p p {
+  .body .bodyContent .mainHolder .textHolder2 .p p {
     font-size: 2.1rem;
   }
 }
@@ -620,7 +645,7 @@ p {
   }
 }
 .contentSquares .square1 .squareImg {
-  width: 50%;
+  width: 45%;
 }
 @media (min-width: 502px) and (max-width: 999px) {
   .contentSquares .square1 .squareImg {
@@ -636,9 +661,11 @@ p {
   max-width: 100%;
 }
 .contentSquares .square1 .squareText {
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 @media (min-width: 502px) and (max-width: 999px) {
   .contentSquares .square1 .squareText {
@@ -652,14 +679,19 @@ p {
     width: 95%;
   }
 }
+.contentSquares .square1 .squareText h2 {
+  margin: 1rem 0;
+  font-size: 3.3rem;
+}
 @media (min-width: 502px) and (max-width: 999px) {
   .contentSquares .square1 .squareText h2 {
     width: fit-content;
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
   }
 }
 .contentSquares .square1 .squareText p {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  margin: 1rem 0;
 }
 @media (min-width: 502px) and (max-width: 999px) {
   .contentSquares .square1 .squareText p {
@@ -692,8 +724,13 @@ p {
   display: flex;
   flex-direction: column;
 }
+.contentSquares .square2 .squareText h2 {
+  margin: 1rem 0;
+  font-size: 3.3rem;
+}
 .contentSquares .square2 .squareText p {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  margin: 1rem 0;
 }
 .together {
   width: 100%;
@@ -724,6 +761,8 @@ p {
   display: flex;
   flex-direction: column;
   width: 45%;
+  align-items: center;
+  text-align: center;
 }
 @media (min-width: 502px) and (max-width: 999px) {
   .together .toghetherContent .textWBtn {
@@ -738,9 +777,19 @@ p {
 @media (max-width: 500px) {
   .together .toghetherContent .textWBtn {
     width: 80%;
+    text-align: center;
   }
 }
+.together .toghetherContent .textWBtn .textHolder {
+  align-items: center;
+}
 @media (min-width: 502px) and (max-width: 999px) {
+  .together .toghetherContent .textWBtn .textHolder {
+    text-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
   .together .toghetherContent .textWBtn .textHolder {
     text-align: center;
   }
@@ -749,6 +798,12 @@ p {
   .together .toghetherContent .textWBtn .textHolder h2 {
     width: fit-content;
     margin: 1rem auto;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .together .toghetherContent .textWBtn .textHolder h2 {
+    text-align: center;
   }
 }
 .together .toghetherContent .textWBtn .textHolder p {
@@ -760,11 +815,39 @@ p {
   .together .toghetherContent .textWBtn .textHolder p {
     width: fit-content;
     margin: 2rem auto;
+    text-align: center;
   }
+}
+@media (max-width: 500px) {
+  .together .toghetherContent .textWBtn .textHolder p {
+    text-align: center;
+  }
+}
+.together .toghetherContent .textWBtn button {
+  font-size: 2rem;
+  background: #279ccf;
+  color: white;
+  border: none;
+  border-radius: 5%;
+  padding: 2rem;
+  margin: 0;
+  width: 25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.together .toghetherContent .textWBtn button:hover {
+  color: white;
 }
 @media (min-width: 502px) and (max-width: 999px) {
   .together .toghetherContent .textWBtn button {
     margin-top: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .together .toghetherContent .textWBtn button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .together .toghetherContent .imageHolderTg {
@@ -783,7 +866,8 @@ p {
   }
 }
 .together .toghetherContent .imageHolderTg img {
-  max-width: 95%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 @media (min-width: 502px) and (max-width: 999px) {
   .together .toghetherContent .imageHolderTg img {
@@ -793,7 +877,8 @@ p {
 }
 @media (max-width: 500px) {
   .together .toghetherContent .imageHolderTg img {
-    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 .together .careIndex {
