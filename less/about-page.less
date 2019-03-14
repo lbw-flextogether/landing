@@ -1,3 +1,9 @@
+body{
+    background-image: url("/img/pilates2.png"), url("/img/trainer2.png");
+    background-position: top right, top left;
+    background-repeat: no-repeat;
+    background-size: 434px;
+}
 .us {
     font-size: 40px;
 }
@@ -53,5 +59,19 @@
             margin-bottom: 20px;
             margin-top: 10px;
         }
+    }
+}
+@media (max-width: 500px) {
+    nav {
+        margin-bottom: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url(/img/pilates2.png), url(/img/trainer2.png);
+        background-position: center top 13%;
+        background-repeat: no-repeat;
+        background-size: 410px, 0;
     }
 }
