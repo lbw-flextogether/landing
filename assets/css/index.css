@@ -226,14 +226,6 @@ p {
   transition-property: box-shadow, transform;
   z-index: 1;
 }
-.growNav:hover,
-.growNav:focus,
-.growNav:active {
-  box-shadow: 0 10px 10px -10px #279ccf;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  z-index: 1;
-}
 .navContainer {
   background: #002147;
   padding: 1rem 0;
