@@ -1241,4 +1241,6 @@ textarea {
   padding: 2rem;
   font-size: 2rem;
   font-family: "lato";
+  border: 4px solid #002147;
+  border-radius: 25px;
 }
