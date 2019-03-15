@@ -468,6 +468,9 @@ p {
     z-index: 1;
   }
 }
+.btn.btn-partnerPage.sL {
+  background: white;
+}
 .footerContainer {
   background: #002147;
   margin: 0 auto;
