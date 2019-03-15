@@ -585,6 +585,9 @@ p {
   max-width: 100%;
   border: 3px solid #002147;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px #000000;
+  -moz-box-shadow: 2px 2px 5px 0px #000000;
+  box-shadow: 2px 2px 5px 0px #000000;
 }
 .container .head p {
   margin-top: 2rem;
@@ -631,6 +634,8 @@ p {
   }
 }
 .body .bodyContent .faces .faceHvr {
+  -webkit-box-shadow: 2px 2px 5px 0px #000000;
+  -moz-box-shadow: 2px 2px 5px 0px #000000;
   box-shadow: 2px 2px 5px 0px #000000;
 }
 .body .bodyContent .textHolder {
@@ -1089,7 +1094,7 @@ p {
 @media (max-width: 500px) {
   .main .imgHolder {
     max-width: 100%;
-    margin: 0 1rem 2rem 1rem;
+    margin: 0 0rem 2rem 0rem;
   }
 }
 .main .imgHolder img {
