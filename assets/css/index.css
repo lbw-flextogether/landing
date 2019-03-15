@@ -426,7 +426,7 @@ p {
   z-index: 1;
 }
 .slideMenu .slideContent {
-  background-color: rgba(0, 33, 71, 0.9);
+  background-color: rgba(0, 33, 71, 0.982);
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -470,6 +470,10 @@ p {
 }
 .btn.btn-partnerPage.sL {
   background: white;
+}
+.btn.btn-partnerPage.sL:hover {
+  background: #279ccf;
+  color: #002147;
 }
 .footerContainer {
   background: #002147;
