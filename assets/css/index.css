@@ -1232,6 +1232,12 @@ p {
     max-width: 95%;
   }
 }
+.contactHeading h1 {
+  margin-bottom: 1rem;
+}
+.contactHeading p {
+  font-size: 1.9rem;
+}
 input[type="text"],
 input[type="email"],
 select,
