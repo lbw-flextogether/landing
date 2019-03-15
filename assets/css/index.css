@@ -478,7 +478,7 @@ p {
 }
 .footerContainer footer .footerItems .footerBtn {
   border-radius: 10px;
-  border: 1% solid #fff;
+  border: 0.5px solid #fff;
   color: #fff;
   overflow: hidden;
   text-align: center;
