@@ -549,30 +549,18 @@ p {
   color: #279ccf;
   line-height: 6rem;
 }
+.container .head .vidHolder {
+  max-width: 55%;
+  margin: 0 2rem;
+}
+.container .head .vidHolder video {
+  max-width: 100%;
+}
 .container .head p {
   margin-top: 2rem;
   line-height: 3rem;
   font-size: 2.3rem;
   color: black;
-}
-.container .vidHolder {
-  max-width: 55%;
-  margin: 0 2rem;
-}
-@media (min-width: 502px) and (max-width: 999px) {
-  .container .vidHolder {
-    max-width: 100%;
-    margin-bottom: 4rem;
-  }
-}
-@media (max-width: 500px) {
-  .container .vidHolder {
-    max-width: 100%;
-    margin: 0 1rem 2rem 1rem;
-  }
-}
-.container .vidHolder video {
-  max-width: 100%;
 }
 .body {
   margin: 0 auto;
