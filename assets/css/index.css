@@ -426,15 +426,18 @@ p {
   z-index: 1;
 }
 .slideMenu .slideContent {
-  background-color: lavender;
-  width: 85%;
+  background-color: rgba(0, 33, 71, 0.9);
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2.5px solid red;
+  border: 0.5rem solid #002147;
   margin: auto;
   z-index: 1;
+  border-radius: 3rem;
+  overflow: hidden;
+  margin-top: -0.65rem;
 }
 .slideMenu .slideLink {
   width: 100%;
@@ -442,11 +445,15 @@ p {
   padding: 15px 0;
   font-size: 18px;
   text-decoration: none;
-  color: red;
+  color: white;
+  border-top: 1px solid #279ccf;
+  border-bottom: 1px solid #279ccf;
+  padding: 1.5rem 0;
+  z-index: 0;
 }
 .slideMenu .slideLink:hover {
   color: white;
-  background-color: red;
+  background-color: rgba(122, 145, 171, 0.9);
 }
 .slideMenu .slideHidden {
   display: none;
@@ -552,6 +559,11 @@ p {
 .container .head .vidHolder {
   max-width: 55%;
   margin: 0 2rem;
+}
+@media (max-width: 500px) {
+  .container .head .vidHolder {
+    max-width: 100%;
+  }
 }
 .container .head .vidHolder video {
   max-width: 100%;
