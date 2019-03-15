@@ -1217,8 +1217,20 @@ p {
   }
 }
 .contactHeading {
+  margin: 1.5rem auto;
+  max-width: 65%;
+  padding: 2rem;
   text-align: center;
-  margin: 2rem 0;
+}
+@media (min-width: 502px) and (max-width: 999px) {
+  .contactHeading {
+    max-width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .contactHeading {
+    max-width: 95%;
+  }
 }
 input[type="text"],
 input[type="email"],

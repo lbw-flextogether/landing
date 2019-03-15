@@ -1,9 +1,24 @@
-.container.contact {
-}
+// .container.contact {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-content: center;
+// 	align-items: center;
+// }
 
 .contactHeading {
 	text-align: center;
-	margin: 2rem 0;
+	margin: 1.5rem auto;
+	max-width: 65%;
+	padding: 2rem;
+	text-align: center;
+
+	@media @tablet {
+		max-width: 95%;
+	}
+	@media @phone {
+		max-width: 95%;
+	}
 }
 
 input[type="text"],
