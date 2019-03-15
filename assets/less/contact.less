@@ -18,9 +18,16 @@ textarea {
 	margin: 0.6rem auto 1.6rem auto;
 	resize: vertical;
 }
+#role {
+	font-size: 1.5rem;
+}
+
+input[placeholder] {
+	font-size: 1.5rem;
+}
 
 .contactForm {
-	max-width: 95%;
+	max-width: 65%;
 	margin: 4rem auto;
 	border-radius: 0.5rem;
 	background: @flexgray;
@@ -29,4 +36,11 @@ textarea {
 	font-family: "lato";
 	border: 4px solid @flexdarkblue;
 	border-radius: 25px;
+
+	@media @tablet {
+		max-width: 95%;
+	}
+	@media @phone {
+		max-width: 95%;
+	}
 }
