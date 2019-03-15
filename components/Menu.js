@@ -13,7 +13,7 @@ class Slide {
 		});
 		this.links = document.querySelectorAll(".slideLink");
 		// this.links.forEach(link => new Link(link));
-		this.links.forEach(function(link) {
+		this.links.forEach(link => {
 			link.addEventListener("click", () => {
 				this.menuClose();
 			});
@@ -23,7 +23,7 @@ class Slide {
 		this.content.classList.toggle("slideHidden");
 	}
 	menuClose() {
-		if (this.content.classList === ".slideHidden") {
+		if (this.content.classList !== ".slideHidden") {
 			this.toggleContent();
 		}
 		console.log("ran");
