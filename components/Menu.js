@@ -12,7 +12,6 @@ class Slide {
 			this.toggleContent();
 		});
 		this.links = document.querySelectorAll(".slideLink");
-		// this.links.forEach(link => new Link(link));
 		this.links.forEach(link => {
 			link.addEventListener("click", () => {
 				this.menuClose();
